@@ -1,0 +1,66 @@
+{
+  "pages": [
+    {
+      "common_content": {
+        "header": {
+          "subtitle": "PLAN DE PREVENCIÓN Y REDUCCIÓN DE RIESGOS PERSONALIZADO",
+          "person_name": "Marta Modificacion Cita",
+          "contract_number": "456789",
+          "date": "25 de Marzo de 2025"
+        }
+      }
+    },
+    {
+      "count": 1,
+      "content": {
+        "title": "PLAN DE PREVENCIÓN Y REDUCCIÓN DE RIESGOS PERSONALIZADO",
+        "image": "imageURL",
+        "subtitle": "",
+        "brand": "MYBOX VIDACARE",
+        "contract_number": "456789",
+        "date": "25 de Marzo de 2025"
+      }
+    },
+    {
+      "count": 2,
+      "content": {
+        "header": {
+          "title": "1.Introducción"
+          
+        },
+        "sections": [
+          {
+            "id": 1,
+            "title": "Introducción",
+            "text": "El Plan de Prevención y reducción de riesgos personalizado va dirigido a promocionar un envejecimiento saludable y prevenir los factores de riesgo modificables asociados a la aparición de enfermedades neurodegenerativas."
+          },
+          {
+            "id": 2,
+            "title": "Claves para tu bienestar",
+            "text": "Se presenta un resumen de la valoración realizada y de las recomendaciones a seguir para proporcionar una fotografía clara del punto de partida y de las principales acciones a llevar a cabo."
+          },
+          {
+            "id": 3,
+            "title": "Recomendaciones",
+            "text": "Se establecen objetivos en cada área de recomendación para fomentar un envejecimiento saludable y prevenir el deterioro cognitivo y funcional. Se proporcionan pautas clave basadas en tu situación actual y con propuestas prácticas para alcanzar la meta deseada."
+          },
+          {
+            "id": 4,
+            "title": "Próximos pasos",
+            "text": "Seguimiento periódico anual con tu Orientador/a Personal, para trabajar de manera conjunta la evolución y mejoras de tu Plan de Prevención y reducción de riesgos personalizado, además de acompañarte en la resolución de dudas y futuras necesidades."
+          },
+          {
+            "id": 5,
+            "title": "Autoría",
+            "text": "El equipo encargado de validar este Plan de Prevención y reducción de riesgos personalizado es multidisciplinario y está compuesto por expertos en áreas, como Neuropsicología, Nutrición, Psicogerontología, Enfermería, Terapia Ocupacional, Fisioterapia, Trabajo Social y Educación Social, entre otros."
+          },
+          {
+            "id": 6,
+            "title": "Bibliografía",
+            "text": "Las recomendaciones emitidas en el siguiente documento han sido elaboradas en base a las directrices de la Organización Mundial de la Salud (OMS) y en consonancia con fuentes bibliográficas de máximo rigor y evidencia científica."
+          }
+        ]
+      }
+    }
+  ]
+}
