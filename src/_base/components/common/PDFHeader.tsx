@@ -6,7 +6,6 @@ interface PDFHeaderProps {
   sectionTitle?: string;
   subtitle?: string;
   personName?: string;
-  contractNumber?: string;
   date?: string;
 }
 
@@ -29,7 +28,7 @@ const PDFHeader: React.FC<PDFHeaderProps> = ({
         </Text>
         <View style={styles.headerInfoContainer}>
           <Text style={styles.headerDate}>
-            {date}
+            {date} 
           </Text>
           <View style={styles.headerPersonInfo}>
             <Text style={styles.headerName}>

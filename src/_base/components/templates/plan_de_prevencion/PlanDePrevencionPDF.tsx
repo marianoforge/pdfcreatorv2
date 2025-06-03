@@ -1,5 +1,5 @@
 import { Document, PDFDownloadLink } from '@react-pdf/renderer';
-import planData from '../../../data.json';
+import planData from '../../../../data.json';
 import { useTranslation } from 'react-i18next';
 import CoverPage from './template_pages/CoverPage';
 import IntroductionPage from './template_pages/IntroductionPage';
