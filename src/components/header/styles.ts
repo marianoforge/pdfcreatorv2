@@ -2,7 +2,7 @@ import { pagePadding } from '../../config/global'
 
 export const styles = {
     headerText: `
-        text-neutral-700 pb-6 text-xs
+        text-neutral-300 pb-6 text-[10px] font-normal
     `,
 
     headerTitleWrapper: `
@@ -10,11 +10,11 @@ export const styles = {
     `,
 
     headerTitle: `
-        font-semibold text-2xl leading-none text-primary-DEFAULT
+        font-bold text-2xl leading-none text-primary-DEFAULT
     `,
 
     headerDate: `
-        text-sm text-neutral-900 leading-5
+        text-sm text-neutral-900 leading-5 
     `,
 
     headerDateText: `
@@ -22,7 +22,7 @@ export const styles = {
     `,
 
     headerPersonName: `
-        font-bold
+        font-bold text-black ml-auto
     `,  
 
     headerLine: `

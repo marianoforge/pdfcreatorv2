@@ -30,7 +30,7 @@ const GridIndex = ({
               )}
             </View>
             {item.text && (
-              <Text style={tw(`text-black ${index === 0 ? 'ml-11' : 'ml-12'} text-[11px]`)}>
+              <Text style={tw(`text-black ml-12 text-[11px]`)}>
                 {item.text}
               </Text>
             )}

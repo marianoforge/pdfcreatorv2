@@ -9,7 +9,7 @@ import { styles } from './styles'
 
 const isLangEs = true
 const getLogoSource = isLangEs ? QidaLogo : QidaLogoCat
-const logoHeight = isLangEs ? 18 : 29
+const logoHeight = isLangEs ? 16 : 29
 const footerHeight = logoHeight + 18
 
 const FooterLogo = () => {

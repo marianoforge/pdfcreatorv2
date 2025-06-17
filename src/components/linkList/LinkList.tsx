@@ -1,0 +1,68 @@
+import { Text, View, Link, Image } from '@react-pdf/renderer'
+import { tw } from '../../utils/tailwind'
+
+interface LinkListProps {
+  title: string
+  list: {
+    text: string
+    linkSrc: string
+    linkText: string
+  }[]
+  color: string
+  icon: "idea" | "request"
+  src: string
+  marginBottom?: number | string
+  marginTop?: number | string
+  marginLeft?: number | string
+  marginRight?: number | string
+}
+
+const LinkList = ({ 
+  title,
+  list = [],
+  color = 'yellow',
+  icon = 'idea',
+  src = '',
+  marginBottom = 0,
+  marginTop = 0,
+  marginLeft = 0,
+  marginRight = 0,
+}: LinkListProps) => {
+  return (
+    <View style={tw(`mb-${marginBottom} mt-${marginTop} ml-${marginLeft} mr-${marginRight}`)}>
+      <View style={tw('')}>
+        {title && (
+          <Text style={tw(`text-[13px] tracking-widest font-bold pt-4 pb-5`)}>
+            {title}
+          </Text>
+        )}
+      </View>
+      <View wrap={true} style={tw('flex flex-col')}>
+        {list.map((link, index) => (
+          <View key={index}>
+            {index === 0 && (
+              <View style={tw('w-auto h-px bg-lightGrey ml-10')}></View>
+            )}
+            <View style={tw('flex flex-row items-center justify-between text-[13px] py-3')}>
+              <View style={tw('flex-1 flex flex-row items-center text-black')}>
+                <Image
+                  src={src || `./link-list/${icon}-${color}.png`}
+                  style={tw('w-[25px] h-[25px]')}
+                />
+                <Text style={tw('flex-1 ml-2')}>{link.text}</Text>
+              </View>
+              <View style={tw('ml-5 mr-10')}>
+                <Link src={link.linkSrc} style={tw(`text-section-${color} font-bold no-underline`)}>
+                  {link.linkText}
+                </Link>
+              </View>
+            </View>
+            <View style={tw('w-auto h-px bg-lightGrey ml-10')}></View>
+          </View>
+        ))}
+      </View>
+    </View>
+  )
+}
+
+export default LinkList
