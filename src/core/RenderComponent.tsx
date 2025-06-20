@@ -15,11 +15,14 @@ import List from '../components/list/List'
 import SectionSummary from '../components/sectionSummary/SectionSummary'
 import Warning from '../components/warning/Warning'
 import NumberedList from '../components/numberedList/NumberedList'
-import Table from '../components/table/Table'
+import TableBlackHeader from '../components/tableBlackHeader/TableBlackHeader'
 import ScalePerYear from '../components/scalePerYear/ScalePerYear'
 import TableList from '../components/tableList/TableList'
 import GridWorkSheets from '../components/gridWorkSheets/GridWorkSheets'
 import LinkList from '../components/linkList/LinkList'
+import ImageBanner from '../components/imageBanner/ImageBanner'
+import ColoredTable from '../components/coloredTable/ColoredTable'
+import TipList from '../components/tipList/TipList'
 
 const componentsMap = {
   TestModule,
@@ -38,11 +41,14 @@ const componentsMap = {
   SectionSummary,
   Warning,
   NumberedList,
-  Table,
+  TableBlackHeader,
   ScalePerYear,
   TableList,
   GridWorkSheets,
-  LinkList
+  LinkList,
+  ImageBanner,
+  ColoredTable,
+  TipList
 } as const
 
 const RenderComponent = (content: any, key: number | string) => {

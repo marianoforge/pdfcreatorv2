@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Path, Svg } from '@react-pdf/renderer'
 import { FC } from 'react'
 

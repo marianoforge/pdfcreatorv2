@@ -2,7 +2,7 @@ import { Text, View } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { renderText } from '../../utils/renders'
 
-interface TableProps {
+interface TableBlackHeaderProps {
   title: string
   list: {
     label: string
@@ -13,13 +13,13 @@ interface TableProps {
   marginTop?: number | string
 }
 
-const Table = ({ 
+const TableBlackHeader = ({ 
   title,
   list,
   fontSize = '12px',
   marginBottom = 6,
   marginTop = 0,
-}: TableProps) => {
+}: TableBlackHeaderProps) => {
   return (
     <View style={tw(`flex flex-col gap-6 mb-${marginBottom} mt-${marginTop} text-[${fontSize}]`)} wrap={false}>
       <View style={tw(`p-2 h-10 flex justify-center items-center bg-black text-white text-center font-semibold`)}>
@@ -47,4 +47,4 @@ const Table = ({
   )
 }
 
-export default Table
+export default TableBlackHeader

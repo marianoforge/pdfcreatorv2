@@ -30,7 +30,7 @@ export const tw = createTw({
 					white: '#FFFFFF',
 					black: '#000000',
 					grey: '#999999',
-					midGrey: '#efefefff',
+					midGrey: '#EFEFEF',
 					lightGrey: '#EFEFEF',
 					section: {
 						yellow: '#fdc646',

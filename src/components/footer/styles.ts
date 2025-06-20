@@ -15,7 +15,7 @@ export const styles = {
   `,
 
   footerPageNumber: `
-    text-[12px]
+    text-[11px]
     text-neutral-900
   `
 }

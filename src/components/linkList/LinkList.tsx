@@ -1,5 +1,6 @@
 import { Text, View, Link, Image } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
+import { renderText } from '../../utils/renders'
 
 interface LinkListProps {
   title: string
@@ -33,7 +34,7 @@ const LinkList = ({
       <View style={tw('')}>
         {title && (
           <Text style={tw(`text-[13px] tracking-widest font-bold pt-4 pb-5`)}>
-            {title}
+            {renderText(title)}
           </Text>
         )}
       </View>
@@ -45,15 +46,12 @@ const LinkList = ({
             )}
             <View style={tw('flex flex-row items-center justify-between text-[13px] py-3')}>
               <View style={tw('flex-1 flex flex-row items-center text-black')}>
-                <Image
-                  src={src || `./link-list/${icon}-${color}.png`}
-                  style={tw('w-[25px] h-[25px]')}
-                />
-                <Text style={tw('flex-1 ml-2')}>{link.text}</Text>
+                <Image src={src || `images/link-list/${icon}-${color}.png`} style={tw('w-[25px] h-[25px]')} />
+                <Text style={tw('flex-1 ml-2')}>{renderText(link.text)}</Text>
               </View>
               <View style={tw('ml-5 mr-10')}>
                 <Link src={link.linkSrc} style={tw(`text-section-${color} font-bold no-underline`)}>
-                  {link.linkText}
+                  {renderText(link.linkText)}
                 </Link>
               </View>
             </View>

@@ -1,6 +1,7 @@
 import { Text, View, Link } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { RightArrowSvg } from '../../assets/images/right-arrow'
+import { renderText } from '../../utils/renders'
 
 interface GridWorkSheetsProps {
   title: string
@@ -35,7 +36,7 @@ const GridWorkSheets = ({
       <View style={tw('')}>
         {title && (
           <Text style={tw(`text-[13px] tracking-widest font-bold pt-4 pb-5`)}>
-            {title}
+            {renderText(title)}
           </Text>
         )}
       </View>
@@ -47,18 +48,18 @@ const GridWorkSheets = ({
               style={tw(`w-[47%] ${backgroundColor} border-b-4 p-3 ${borderColor} mb-6`)}
             >
               <Text style={tw('text-[13px] leading-6 font-bold mt-3')}>
-                {item.text}
+                {renderText(item.text)}
               </Text>
 
               <Text style={tw('leading-6 mt-3 text-[12px]')}>
-                {item.description}
+                {renderText(item.description)}
               </Text>
               <View>
                 <Link
                   style={tw(`${buttonColor} w-32 py-2 px-3 rounded-full my-6 text-white no-underline text-base flex flex-row items-center justify-between`)}
                   src={item.linkSrc}
                 >
-                  <Text>{item.linkText}</Text>
+                  <Text>{renderText(item.linkText)}</Text>
                   <RightArrowSvg
                     style={tw('ml-4')}
                     width="18px"

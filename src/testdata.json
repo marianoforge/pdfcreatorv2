@@ -107,7 +107,7 @@
       {
         "type": "Image",
         "props": {
-          "src": "test-images/introduction-infography-es.png",
+          "src": "images/test-images/introduction-infography-es.png",
           "width": "440px",
           "marginBottom": 10
         }
@@ -402,7 +402,7 @@
                   "props": {
                     "marginBottom": 2,
                     "marginLeft": 20,
-                    "text": "<image src='test-images/check-icon.png'> Si el resultat es troba dins dels paràmetres adequats segons l'escala, s'identifica amb una marca de verificació per indicar un resultat positiu."
+                    "text": "<image src='images/test-images/check-icon.png'> Si el resultat es troba dins dels paràmetres adequats segons l'escala, s'identifica amb una marca de verificació per indicar un resultat positiu."
                   }
                 },
                 {
@@ -410,7 +410,7 @@
                   "props": {
                     "marginBottom": 0,
                     "marginLeft": 20,
-                    "text": "<image src='test-images/warning-icon.png'> Si el resultat no està dins dels paràmetres adequats segons l'escala, s'identifica amb un senyal d'advertència per assenyalar un resultat que requereix atenció o millora."
+                    "text": "<image src='images/test-images/warning-icon.png'> Si el resultat no està dins dels paràmetres adequats segons l'escala, s'identifica amb un senyal d'advertència per assenyalar un resultat que requereix atenció o millora."
                   }
                 }
               ]
@@ -440,7 +440,7 @@
         }
       }
     ],
-    "Actividad-fisica": [
+    "actividad-fisica": [
       {
         "type": "HeaderSection",
         "props": {
@@ -477,7 +477,7 @@
         }
       },
       {
-        "type": "Table",
+        "type": "TableBlackHeader",
         "props": {
           "title": "Qüestionari internacional d'activitat física (IPAQ)",
           "list": [
@@ -529,7 +529,7 @@
       {
         "type": "Text",
         "props": {
-          "text": "En relació amb el resultat, <bold>Playwright chromium, volem animar-te a fer canvis en el teu estil de vida</bold>. Sabem que no és fàcil, però seria recomanable que comencis a establir una major activitat física, gradualment. Et suggerim que valoris la possibilitat de practicar aquella activitat física que més et motivi, fins i tot si és d'intensitat lleu. Tingues en compte que fer una mica d'activitat física sempre és millor que res, i et proporcionarà importants beneficis per a la teva salut."
+          "text": "En relació amb el resultat, <bold>María Cristina Mulet, volem animar-te a fer canvis en el teu estil de vida</bold>. Sabem que no és fàcil, però seria recomanable que comencis a establir una major activitat física, gradualment. Et suggerim que valoris la possibilitat de practicar aquella activitat física que més et motivi, fins i tot si és d'intensitat lleu. Tingues en compte que fer una mica d'activitat física sempre és millor que res, i et proporcionarà importants beneficis per a la teva salut."
         }
       },
       {
@@ -600,6 +600,8 @@
       {
         "type": "TableList",
         "props": {
+          "headerColor": "section-yellow",
+          "roundedCorners": true,
           "marginTop": "[-5px]",
           "marginBottom": 0,
           "tableRows": [
@@ -654,7 +656,7 @@
         "type": "Text",
         "props": {
           "marginBottom": 10,
-          "text": "Playwright chromium, perquè puguis començar a treballar en l'objectiu proposat, hem seleccionat el material exclusivament per a tu, basat en els teus gustos, preferències i necessitats. Aquest material inclou fitxes de treball, que t'ajudaran a assolir la meta desitjada, i articles d'interès, perquè puguis aprofundir en temes relacionats amb l'activitat física."
+          "text": "María Cristina Mulet, perquè puguis començar a treballar en l'objectiu proposat, hem seleccionat el material exclusivament per a tu, basat en els teus gustos, preferències i necessitats. Aquest material inclou fitxes de treball, que t'ajudaran a assolir la meta desitjada, i articles d'interès, perquè puguis aprofundir en temes relacionats amb l'activitat física."
         }
       },
       {
@@ -739,8 +741,7 @@
         "type": "Title",
         "props": {
           "text": "E. TINGUES EN COMPTE...",
-          "marginTop": 4,
-          "marginBottom": 8
+          "marginTop": 4
         }
       },
       {
@@ -751,8 +752,1350 @@
           "items": [
             "<bold>Quan no puguis complir les recomanacions descrites</bold>, o presentis una afecció crònica, <bold>hauràs de procurar realitzar activitats físiques d'acord amb les teves possibilitats.</bold>", 
             "Es recomana <bold>començar amb petites dosis d'activitat física, per anar augmentant gradualment</bold> la durada, freqüència i intensitat", 
-            "És <bold>important que comuniquis al teu professional de referència qualsevol factor de risc, símptoma o malaltia</bold> no informada prèviament, per adaptar la recomanació d'activitat física realitzada."
+            "És <bold>important que comuniquis al teu professional de referència qualsevol factor de risc, símptoma o malaltia</bold> no informada prèviament, per adaptar la recomanació d'activitat física realitzada.",
+            "Fes sempre exercicis d'escalfament i estiraments per reduir el risc de lesions.",
+            "Si durant l'exercici físic apareix algun símptoma com dolor articular, muscular, disnea intensa, mareig, cefalea, dolor toràcic, rampes musculars o un altre símptoma que et preocupi, has de reduir el ritme o parar i consultar amb el teu professional de salut de referència."
           ]
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "F. PER QUÈ HAURIA DE SEGUIR AQUESTES RECOMANACIONS?"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "Segons l'Organització Mundial de la Salut (OMS), els beneficis de fer activitat física regular i d'exercici físic són múltiples:"
+        }
+      },
+      {
+        "type": "List",
+        "props": {
+          "itemsSeparation": 3,
+          "marginLeft": "[-12px]",
+          "items": [
+            "<bold>Reducció del risc de mortalitat per múltiples causes.</bold>",
+            "<bold>Prevenció i control de malalties</bold> associades amb un risc més gran de deteriorament cognitiu, com ara malalties cardiovasculars, diabetis i síndrome metabòlica, i redueix el risc de certs tipus de càncer, així com el sobrepès i obesitat.",
+            "<bold>Millora la salut òssia</bold> reduint el risc de caigudes i fractures. A més, pot millorar l'artritis i altres patologies reumàtiques.",
+            "<bold>Millora la salut mental i el son</bold>. Contribueix a reduir el risc de desenvolupar ansietat i depressió, millora l'estat d'ànim, disminueix els símptomes d'estrès i augmenta l'autoestima.",
+            "<bold>Millora de la salut cognitiva</bold>."
+          ]
+        }
+      },
+      {
+        "type": "ImageBanner",
+        "props": {
+          "src": "images/oms.png",
+          "title": "Recomanació de l'Organització Mundial de la Salut",
+          "text": "L'OMS recomana fermament fer activitat física per mantenir una funció cognitiva normal i reduir el risc de deteriorament cognitiu."
+        }
+      }
+    ],
+    "nutricion": [
+      {
+        "type": "HeaderSection",
+        "props": {
+          "smallText": "RECOMANACIONS: 02. NUTRICIONALS",
+          "title": "02. Nutricionals",
+          "color": "section-green",
+          "tags": [
+            {
+              "text": "Atención",
+              "color": "red",
+              "selected": true
+            },
+            {
+              "text": "Mejora",
+              "color": "orange"
+            },
+            
+            {
+              "text": "Sigue así",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      {
+        "type": "FooterLogo"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "marginTop": 0,
+          "marginBottom": 4,
+          "text": "A. RESULTAT DE LES ESCALES DE VALORACIÓ"
+        }
+      },
+      {
+        "type": "TableBlackHeader",
+        "props": {
+          "title": "Índex de Massa Corporal (IMC)",
+          "list": [
+            {
+              "label": "Descripció de l'escala de valoració",
+              "content": "L'Índex de Massa Corporal (IMC)* és una mesura utilitzada per avaluar si una persona té un pes saludable en relació amb la seva alçada. Es calcula dividint el pes d'una persona en quilograms pel quadrat de la seva altura en metres (kg/m²)."
+            },
+            {
+              "label": "Data de valoració",
+              "content": "30/01/2025"
+            },
+            {
+              "label": "Pes",
+              "content": "80Kg"
+            },
+            {
+              "label": "Alçada",
+              "content": "160cm"
+            },
+            {
+              "label": "IMC*",
+              "content": "31.25 (Obesitat tipus I)"
+            }
+          ]
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "ScalePerYear",
+        "props": {
+          "scales": [
+            {
+              "text": "< 18.5",
+              "subText": "Pes insuficient"
+            },
+            {
+              "text": "18.5-24.9",
+              "subText": "Pes saludable"
+            },
+            {
+              "text": "25-26.9",
+              "subText": "Sobrepès I"
+            },
+            {
+              "text": "27-29.9",
+              "subText": "Sobrepès II"
+            },
+            {
+              "selected": true,
+              "text": "30-34.9",
+              "subText": "Obesitat tipus I"
+            },
+            {
+              "text": "35-39.9",
+              "subText": "Obesitat tipus II"
+            },
+            {
+              "text": "40-49.9",
+              "subText": "Obesitat tipus III"
+            },
+            {
+              "text": "> 50",
+              "subText": "Obesitat tipus IV"
+            }
+          ],
+          "areaColor": "section-green",
+          "none": false,
+          "currentYear": "2025"
+        }
+      },
+      {
+        "type": "Warning",
+        "props": {
+          "marginBottom": 6,
+          "text": "<bold>El resultat facilitat no representa, de cap manera, un diagnòstic mèdic</bold> ni pretén substituir un servei d'atenció mèdica, així com tampoc determinar algun tractament a seguir."
+        }
+      },
+      {
+        "type": "Warning",
+        "props": {
+          "marginBottom": 6,
+          "lineHeight": "1.6",
+          "text": "<italic>(*) És important tenir en compte que l'IMC no té en compte la distribució de greix corporal, massa muscular o composició corporal general. Per tant, és possible que una persona tingui un IMC alt, però sigui saludable, o un IMC baix, però tingui una quantitat excessiva de greix corporal.</italic>"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "<bold>María Cristina Mulet</bold>, el resultat de l'IMC és de 31.25, cosa que indica una obesitat de tipus I."
+        }
+      },
+      {
+        "type": "TableBlackHeader",
+        "props": {
+          "title": "Índex de Massa Corporal (IMC)",
+          "list": [
+            {
+              "label": "Descripció de l'escala de valoració",
+              "content": "L'Índex de Massa Corporal (IMC)* és una mesura utilitzada per avaluar si una persona té un pes saludable en relació amb la seva alçada. Es calcula dividint el pes d'una persona en quilograms pel quadrat de la seva altura en metres (kg/m²)."
+            },
+            {
+              "label": "Data de valoració",
+              "content": "30/01/2025"
+            },
+            {
+              "label": "Resultat",
+              "content": "Baixa adherència a la dieta mediterrània"
+            }
+          ]
+        }
+      },
+      {
+        "type": "ScalePerYear",
+        "props": {
+          "scales": [
+            {
+              "selected": true,
+              "text": "< 9",
+              "subText": "Baixa adherència a la dieta mediterrània"
+            },
+            {
+              "text": ">= 9",
+              "subText": "Bona adherència a la dieta mediterrània"
+            }
+          ],
+          "areaColor": "section-green",
+          "none": false,
+          "currentYear": "2025"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "<bold>María Cristina Mulet</bold>, el qüestionari MEDAS ens indica una baixa adherència a la dieta mediterrània."
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "Banner",
+        "props": {
+          "color": "section-green",
+          "text": "La dieta mediterrània es caracteritza per un alt consum de fruites, verdures, llegums, fruits secs, peix, oli d'oliva i cereals integrals, i una baixa ingesta de carns vermelles, aliments processats i greixos saturats."
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "B. OBJECTIUS"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "<bold>L'objectiu principal és mantenir una alimentació saludable.</bold>"
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "C. PAUTES CLAU"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "En relació amb el resultat, <bold>María Cristina Mulet, et recomanem fer una dieta hipocalòrica, equilibrada i saludable</bold>, a causa del resultat de l'IMC que indica obesitat."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "Segons l´Organització Mundial de la Salut (OMS), la composició exacta d'una dieta variada, equilibrada i saludable estarà determinada per les característiques de cada persona (edat, sexe, hàbits de vida i grau d´activitat física), el context cultural, els aliments disponibles al lloc i els hàbits alimentaris. Tot i això, els principis bàsics de l'alimentació saludable continuen sent els mateixos."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "<bold>En base a les indicacions de l'OMS, es faciliten 12 recomanacions i consells nutricionals pràctics per mantenir una alimentació saludable:</bold>"
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "title": "1. Verdures i hortalisses",
+          "content": [
+            {
+              "type": "Text",
+              "props": {
+                "text": "<bold>Les verdures i hortalisses són una important font de vitamines, minerals, fibra i antioxidants. Consumeix hortalisses, com a mínim 2 vegades al dia</bold>, crues (en amanides ben variades) o cuites (al vapor, saltejades, al forn, etc.), com a plat principal o d'acompanyament."
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "marginBottom": 2,
+                "text": "<bolditalic>1 ració d'hortalisses equival a:</bolditalic>"
+              }
+            },
+            {
+              "type": "List",
+              "props": {
+                "marginTop": 0,
+                "marginBottom": 2,
+                "items": [
+                  "1 plat d'amanida.",
+                  "1 plat de verdura cuita (mongeta tendra, minestra…)",
+                  "1-2 tomàquets, pastanagues o cogombres.",
+                  "1 pebrot, 1 carbassó."
+                ]
+              }
+            }
+          ],
+          "color": "section-green",
+          "colorLight": "sectionLight-green"
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "title": "2. Fruita",
+          "content": [
+            {
+              "type": "Text",
+              "props": {
+                "text": "<bold>El consum d'almenys 3 racions de fruita al dia contribueix a una alimentació saludable ia la prevenció de múltiples malalties.</bold>"
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "text": "Consumeix la fruita sencera oa trossos, evita prendre sucs de fruita encara que sigui natural. També pots consumir fruita dessecada i deshidratada: panses, figues seques, prunes panses, etc."
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "marginBottom": 2,
+                "text": "<bolditalic>1 ració d'hortalisses equival a:</bolditalic>"
+              }
+            },
+            {
+              "type": "List",
+              "props": {
+                "marginTop": 0,
+                "marginBottom": 2,
+                "items": [
+                  "1 plat d'amanida.",
+                  "1 plat de verdura cuita (mongeta tendra, minestra…)",
+                  "1-2 tomàquets, pastanagues o cogombres.",
+                  "1 pebrot, 1 carbassó."
+                ]
+              }
+            }
+          ],
+          "color": "section-green",
+          "colorLight": "sectionLight-green"
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "title": "3. Llegums",
+          "content": [
+            {
+              "type": "Text",
+              "props": {
+                "text": "<bold>Els llegums són una excel·lent font de proteïnes, fibres, vitamines i minerals essencials. També són baixes en greixos saturats i no contenen colesterol.</bold>"
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "text": "Segons l'Organització Mundial de la Salut, una ingesta adequada de llegums (mongetes, llenties, pèsols, cigrons, etc.) pot ajudar a reduir el risc de malalties cardiovasculars, diabetis tipus 2, obesitat i certs tipus de càncer ."
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "marginBottom": 2,
+                "text": "<bold>Consumeix llegums de 3 a 4 vegades a la setmana</bold>, es poden cuinar i presentar de moltes maneres diferents, i és fàcil comprar cuites."
+              }
+            }
+          ],
+          "color": "section-green",
+          "colorLight": "sectionLight-green"
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "title": "4. Fruits secs",
+          "content": [
+            {
+              "type": "Text",
+              "props": {
+                "text": "Els fruits secs contenen fibra, greixos saludables, proteïnes, vitamines, minerals i substàncies fitoquímiques protectores. Consumeix-los sense sal ni sucre, i evita menjar-los fregits, ja que solen emprar olis poc recomanables i afegeixen molta sal."
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "text": "Es recomana consumir una porció petita de fruita seca al dia, que generalment és al voltant de 30 grams (aproximadament un grapat)."
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "marginBottom": 2,
+                "text": "Si tens al·lèrgia als fruits secs, com ara les nous, ametlles, avellanes, festucs, entre d'altres, has d'evitar-ne el consum i buscar altres alternatives d'aliments saludables."
+              }
+            }
+          ],
+          "color": "section-green",
+          "colorLight": "sectionLight-green"
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "title": "5. Cereals integrals",
+          "content": [
+            {
+              "type": "Text",
+              "props": {
+                "text": "Els cereals integrals i aliments amb farines integrals són rics en midó, en fibres, vitamines del grup B i altres micronutrients. Són opcions recomanables el blat de moro, mill, civada, blat o arròs integral sense processar."
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "text": "Es recomana un consum diari, controlant la mida de les porcions i limitant els cereals processats i ensucrats."
+              }
+            }
+          ],
+          "color": "section-green",
+          "colorLight": "sectionLight-green"
+        }
+      },
+      {
+        "type": "TipList",
+        "props": {
+          "title": "Trucs per consumir més cereals integrals.",
+          "color": "section-green",
+          "list": [
+            "Compra només les varietats integrals dels derivats dels cereals: pa integral, arròs integral, pasta integral, cuscús integral, etc.", 
+            "Escull aliments integrals mínimament processats, que només continguin el cereal en qüestió o com menys ingredients millor."
+          ]
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "title": "12. Lactis",
+          "content": [
+            {
+              "type": "Text",
+              "props": {
+                "text": "L'Organització Mundial de la Salut recomana que els lactis siguin part d'una dieta saludable, ja que són una font important de nutrients com proteïnes, calci, vitamines D i B12, i àcid fòlic . Tanmateix, també suggereix que es consumeixin amb moderació i s'elegeixin <bold>opcions baixes en greix i sense sucre.</bold>\n No totes les persones poden o han de consumir lactis a causa d'al·lèrgies, intoleràncies o eleccions dietètiques personals (per exemple, veganisme). En aquests casos, és essencial assegurar-se d'obtenir suficient calci i altres nutrients a través de fonts alternatives, com llets vegetals fortificades i altres aliments rics en calci."
+              }
+            }
+          ],
+          "color": "section-green",
+          "colorLight": "sectionLight-green"
+        }
+      },
+      { 
+        "type": "Text",
+        "props": {
+          "text": "<underline>Altres aspectes addicionals</underline>"
+        }
+      },
+      {
+        "type": "List",
+        "props": {
+          "items": [
+            "Mantingues un pes saludable.",
+            "Elimina o limita el consum de dolços, brioixeria i refrescos.",
+            "Elimina els aliments ultraprocessats: salses industrials, snacks, embotits, etc.",
+            "Elimina les farines refinades.",
+            "Evita el consum de begudes amb gas, el cafè i l'alcohol."
+          ]
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "marginTop": 0,
+          "trackingWidest": false,
+          "text": "Resum de la freqüència de consum recomanada per cada grup d'aliments:"
+        }
+      },
+      { 
+        "type": "TableList",
+        "props": {
+          "headerColor": "section-green",
+          "rowColor": "sectionLight-green",
+          "headerCompressed": true,
+          "fontSize": "11px",
+          "cellHaveRightArrow": true,
+          "cellRightArrowColor": "#9eca38",
+          "cellBottomPadding": 8,
+          "tableHeader": ["RECOMANACIÓ", "FREQÜÈNCIA"],
+          "tableRows": [
+            [
+              "1. Verdures i hortalisses", 
+              "Mínim 2 vegades al dia."
+            ],
+            [
+              "2. Fruita", 
+              "Almenys 3 racions de fruita al dia"
+            ],
+            [
+              "3. Llegums", 
+              "De 3 a 4 vegades a la setmana."
+            ],
+            [
+              "4. Fruits secs", 
+              "Un grapat cada dia és bona opció. S'aconsella consumir-los crus (no torrats ni amb sal)."
+            ],
+            [
+              "5. Cereals integrals", 
+              "En cada menjar. Són opcions recomanables el blat de moro, el mill, la civada, el blat o l'arròs integral sense processar."
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "D. ENLLAÇOS D'AMPLIACIÓ I FITXES DE TREBALL"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginBottom": 10,
+          "text": "María Cristina Mulet, perquè puguis començar a treballar en l'objectiu proposat, hem seleccionat el material exclusivament per a tu, basat en els teus gustos, preferències i necessitats. Aquest material inclou fitxes de treball, que t'ajudaran a assolir la meta desitjada, i articles d'interès, perquè puguis aprofundir en temes relacionats amb l'activitat física."
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "GridWorkSheets",
+        "props": {
+          "title": "Fitxes de treball",
+          "color": "green",
+          "items": [
+            {
+              "text": "1. Exercicis per a l'estimulació física: Iniciació a l'enfortiment muscular",
+              "description": "Exercita la teva musculatura amb exercicis moderats",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "2. Exercicis per a l'estimulació física: Enfortiment Muscular i coordinació",
+              "description": "Exercicis de força per a potenciar la teva musculatura",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "3. Exercicis d'estimulació física: resistència cardiovascular",
+              "description": "Aplica aquests exercicis dinàmics variant les seves intensitats per a obtenir millors resultats",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "4. Exercicis per a l'estimulació física: Activa't! Summa salut amb aquestes dues rutinest",
+              "description": "Exercicis dinàmics per a enfortir la teva resistència cardiovascular",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "5. Exercicis per a l'estimulació física: 3 exercicis per practicar desde casa",
+              "description": "Comença a activar-te i practica aquests exercicis en la teva rutina diària",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "6. Exercicis per a l'estimulació física: Articula la teva força! 7 exercicis per a enfortir les teves articulacions",
+              "description": "La importància de cuidar les teves articulacions per a una vida activa i saludable",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            }
+          ]
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "LinkList",
+        "props": {
+          "title": "Enllaços d'ampliació",
+          "color": "green",
+          "list": [
+            {
+              "text": "Exercicis per a l'estimulació física: L'activitat fisica com a rutina. Aprèn a crear hàbits saludables",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            },
+            {
+              "text": "Gimnàstica per a adults majors",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            },
+            {
+              "text": "Últimes dades de l'impacte de l'activitat física en la prevenció i tractament de les demències",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            }
+          ]
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "E. TINGUES EN COMPTE...",
+          "marginTop": 4
+        }
+      },
+      {
+        "type": "List",
+        "props": {
+          "itemsSeparation": 3,
+          "marginLeft": "[-12px]",
+          "items": [
+            "<bold>Quan no puguis complir les recomanacions descrites</bold>, o presentis una afecció crònica, <bold>hauràs de procurar realitzar activitats físiques d'acord amb les teves possibilitats.</bold>", 
+            "Es recomana <bold>començar amb petites dosis d'activitat física, per anar augmentant gradualment</bold> la durada, freqüència i intensitat", 
+            "És <bold>important que comuniquis al teu professional de referència qualsevol factor de risc, símptoma o malaltia</bold> no informada prèviament, per adaptar la recomanació d'activitat física realitzada.",
+            "Fes sempre exercicis d'escalfament i estiraments per reduir el risc de lesions.",
+            "Si durant l'exercici físic apareix algun símptoma com dolor articular, muscular, disnea intensa, mareig, cefalea, dolor toràcic, rampes musculars o un altre símptoma que et preocupi, has de reduir el ritme o parar i consultar amb el teu professional de salut de referència."
+          ]
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "F. PER QUÈ HAURIA DE SEGUIR AQUESTES RECOMANACIONS?"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginBottom": 16,
+          "text": "Segons l'Organització Mundial de la Salut (OMS), l'alimentació té una influència transcendental en el funcionament adequat del cervell i en la reducció de factors modificables relacionats amb malalties neurodegeneratives. A més, l'alimentació també pot influir en el nostre estat emocional i en el benestar general."
+        }
+      },
+      {
+        "type": "ImageBanner",
+        "props": {
+          "src": "images/oms.png",
+          "title": "Recomanació de l'Organització Mundial de la Salut",
+          "text": "L'OMS recomana fermament fer activitat física per mantenir una funció cognitiva normal i reduir el risc de deteriorament cognitiu."
+        }
+      }
+    ],
+    "cognitiva": [
+      {
+        "type": "HeaderSection",
+        "props": {
+          "smallText": "RECOMANACIONS: 03. COGNITIVES",
+          "title": "03. Cognitivess",
+          "color": "section-turquoise",
+          "tags": [
+            {
+              "text": "Atención",
+              "color": "red"
+            },
+            {
+              "text": "Mejora",
+              "color": "orange",
+              "selected": true
+            },
+            
+            {
+              "text": "Sigue así",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      {
+        "type": "FooterLogo"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "marginTop": 0,
+          "marginBottom": 4,
+          "text": "A. RESULTAT DE LES ESCALES DE VALORACIÓ"
+        }
+      },
+      {
+        "type": "TableBlackHeader",
+        "props": {
+          "title": "Test de Pfeiffer",
+          "list": [
+            {
+              "label": "Descripció de l'escala de valoració",
+              "content": "El Test Pfeiffer és una prova de cribratge, dissenyada per detectar possibles indicis de deteriorament cognitiu. Aquesta escala consta de 10 preguntes que avaluen diferents aspectes de la funció cognitiva, com ara la memòria, l'atenció, el raonament i el càlcul."
+            },
+            {
+              "label": "Data de valoració",
+              "content": "30/01/2025"
+            },
+            {
+              "label": "Resultat",
+              "content": "No realitzat, (María Cristina Mulet no indica problemes cognitius)"
+            }
+          ]
+        }
+      },
+      {
+        "type": "Warning",
+        "props": {
+          "marginBottom": 6,
+          "text": "<bold>El resultat facilitat no representa, de cap manera, un diagnòstic mèdic</bold> ni pretén substituir un servei d'atenció mèdica, així com tampoc determinar algun tractament a seguir."
+        }
+      },
+      {
+        "type": "ScalePerYear",
+        "props": {
+          "scales": [
+            {
+              "text": "A:8-10",
+              "subText": "Possible deteriorament"
+            },
+            {
+              "text": "B:5-7",
+              "subText": ""
+            },
+            {
+              "text": "C:3-4",
+              "subText": ""
+            },
+            {
+              "text": "D:0-2",
+              "subText": "Sense possible deteriorament",
+              "selected": true
+            }
+          ],
+          "areaColor": "section-turquoise",
+          "none": false,
+          "currentYear": "2025"
+        }
+      },
+     
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 7,
+          "marginBottom": 0,
+          "text": "A. <underline>Puntuació de 8-10</underline>: possible deteriorament cognitiu sever."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 7,
+          "marginBottom": 0,
+          "text": "B. <underline>Puntuació de 5-7</underline>: possible deteriorament cognitiu moderat."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 7,
+          "marginBottom": 0,
+          "text": "C. <underline>Puntuació de 3-4</underline>: possible deteriorament cognitiu lleu."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 7,
+          "text": "D. <underline>Puntuació de 0-2</underline>: absència de possible deteriorament cognitiu."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "En relació amb el resultat, <bold>María Cristina Mulet, indiques tenir una conservació òptima de les teves capacitats cognitives. Continua així!</bold>"
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "B. OBJECTIUS"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "<bold>L'objectiu principal és mantenir o millorar les teves habilitats cognitives, enfortint les connexions neuronals i augmentant la reserva cognitiva</bold>, amb la finalitat de reduir el risc d'aparició de deteriorament cognitiu."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "L'estimulació cognitiva regular pot ser beneficiosa per a mantenir un rendiment cognitiu òptim i prevenir el deteriorament cognitiu associat amb l'envelliment."
+        }
+      },
+      {
+        "type": "Banner",
+        "props": {
+          "color": "section-turquoise",
+          "text": "Una ment activa pot ser una bona aliada per a reduir el risc de desenvolupar una malaltia neurodegenerativa."
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "C. PAUTES CLAU"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "En base a la valoració realitzada, els teus gustos i preferències, et recomanem les següents activitats:"
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "title": "Activitats cognitives",
+          "color": "section-turquoise",
+          "colorLight": "sectionLight-turquoise",
+          "icon": "images/colored-table/cognitive-white.png"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 4,
+          "marginTop": 2,
+          "marginBottom": 10,
+          "text": "Prueba de pautas para ver el texto"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "Et recomanem que facis també una prospecció d'aquelles activitats que t'interessen i exploris els recursos disponibles a la teva comunitat per realitzar-los. Fes una llista, valora els beneficis de cada activitat i ordena'ls per motivació (mira la fitxa de treball “Llistat d'interessos”)."
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "color": "section-turquoise",
+          "colorLight": "sectionLight-turquoise",
+          "content": [
+            { 
+              "type": "Text",
+              "props": {
+                "text": "<bold>Exemples d'activitats</bold>",
+                "marginBottom": 4
+              }
+            },
+            {
+              "type": "List",
+              "props": {
+                "items": [
+                  "Qualsevol tipus d'educació i aprenentatge, com aprendre un idioma o ballar.",
+                  "Desenvolupar activitats creatives, com ara la dansa, la pintura, el dibuix, tocar un instrument musical o cantar.",
+                  "Fer trencaclosques, mots encreuats o jugar a jocs de taula.",
+                  "Participar en activitats socials, com ara reunions o esdeveniments en centres socials.",
+                  "Col·laborar amb organitzacions, associacions o programes de voluntariat.",
+                  "Assistir a museus, concerts, obres de teatre i altres esdeveniments culturals.",
+                  "Jugar a l'ordinador o tauleta activitats que estimulin el cervell."
+                ],
+                "marginBottom": 4,
+                "marginRight": 4
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "D. ENLLAÇOS D'AMPLIACIÓ I FITXES DE TREBALL"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginBottom": 10,
+          "text": "María Cristina Mulet, perquè puguis començar a treballar en l'objectiu proposat, hem seleccionat el material exclusivament per a tu, basat en els teus gustos, preferències i necessitats. Aquest material inclou fitxes de treball, que t'ajudaran a assolir la meta desitjada, i articles d'interès, perquè puguis aprofundir en temes relacionats amb l'activitat física."
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "GridWorkSheets",
+        "props": {
+          "title": "Fitxes de treball",
+          "color": "turquoise",
+          "items": [
+            {
+              "text": "1. Exercicis per a l'estimulació física: Iniciació a l'enfortiment muscular",
+              "description": "Exercita la teva musculatura amb exercicis moderats",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "2. Exercicis per a l'estimulació física: Enfortiment Muscular i coordinació",
+              "description": "Exercicis de força per a potenciar la teva musculatura",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "3. Exercicis d'estimulació física: resistència cardiovascular",
+              "description": "Aplica aquests exercicis dinàmics variant les seves intensitats per a obtenir millors resultats",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "4. Exercicis per a l'estimulació física: Activa't! Summa salut amb aquestes dues rutinest",
+              "description": "Exercicis dinàmics per a enfortir la teva resistència cardiovascular",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "5. Exercicis per a l'estimulació física: 3 exercicis per practicar desde casa",
+              "description": "Comença a activar-te i practica aquests exercicis en la teva rutina diària",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "6. Exercicis per a l'estimulació física: Articula la teva força! 7 exercicis per a enfortir les teves articulacions",
+              "description": "La importància de cuidar les teves articulacions per a una vida activa i saludable",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            }
+          ]
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "LinkList",
+        "props": {
+          "title": "Enllaços d'ampliació",
+          "color": "turquoise",
+          "list": [
+            {
+              "text": "Exercicis per a l'estimulació física: L'activitat fisica com a rutina. Aprèn a crear hàbits saludables",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            },
+            {
+              "text": "Gimnàstica per a adults majors",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            },
+            {
+              "text": "Últimes dades de l'impacte de l'activitat física en la prevenció i tractament de les demències",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            }
+          ]
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "E. TINGUES EN COMPTE...",
+          "marginTop": 4
+        }
+      },
+      {
+        "type": "List",
+        "props": {
+          "itemsSeparation": 3,
+          "marginLeft": "[-12px]",
+          "items": [
+            "<bold>Quan no puguis complir les recomanacions descrites</bold>, o presentis una afecció crònica, <bold>hauràs de procurar realitzar activitats físiques d'acord amb les teves possibilitats.</bold>", 
+            "Es recomana <bold>començar amb petites dosis d'activitat física, per anar augmentant gradualment</bold> la durada, freqüència i intensitat", 
+            "És <bold>important que comuniquis al teu professional de referència qualsevol factor de risc, símptoma o malaltia</bold> no informada prèviament, per adaptar la recomanació d'activitat física realitzada.",
+            "Fes sempre exercicis d'escalfament i estiraments per reduir el risc de lesions.",
+            "Si durant l'exercici físic apareix algun símptoma com dolor articular, muscular, disnea intensa, mareig, cefalea, dolor toràcic, rampes musculars o un altre símptoma que et preocupi, has de reduir el ritme o parar i consultar amb el teu professional de salut de referència."
+          ]
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "F. PER QUÈ HAURIA DE SEGUIR AQUESTES RECOMANACIONS?"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginBottom": 16,
+          "text": "Segons l'Organització Mundial de la Salut (OMS), l'alimentació té una influència transcendental en el funcionament adequat del cervell i en la reducció de factors modificables relacionats amb malalties neurodegeneratives. A més, l'alimentació també pot influir en el nostre estat emocional i en el benestar general."
+        }
+      },
+      {
+        "type": "ImageBanner",
+        "props": {
+          "src": "images/oms.png",
+          "title": "Recomanació de l'Organització Mundial de la Salut",
+          "text": "L'OMS recomana fermament fer activitat física per mantenir una funció cognitiva normal i reduir el risc de deteriorament cognitiu."
+        }
+      }
+    ],
+    "emocional": [
+      {
+        "type": "HeaderSection",
+        "props": {
+          "smallText": "RECOMANACIONS: 04. BENESTAR EMOCIONAL",
+          "title": "04. Benestar emocional",
+          "color": "section-purple",
+          "tags": [
+            {
+              "text": "Atención",
+              "color": "red",
+              "selected": true
+            },
+            {
+              "text": "Mejora",
+              "color": "orange"
+            },
+            {
+              "text": "Sigue así",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      {
+        "type": "FooterLogo"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "marginTop": 0,
+          "marginBottom": 4,
+          "text": "A. RESULTAT DE LES ESCALES DE VALORACIÓ"
+        }
+      },
+      {
+        "type": "TableBlackHeader",
+        "props": {
+          "title": "Test de Pfeiffer",
+          "list": [
+            {
+              "label": "Descripció de l'escala de valoració",
+              "content": "El Test Pfeiffer és una prova de cribratge, dissenyada per detectar possibles indicis de deteriorament cognitiu. Aquesta escala consta de 10 preguntes que avaluen diferents aspectes de la funció cognitiva, com ara la memòria, l'atenció, el raonament i el càlcul."
+            },
+            {
+              "label": "Data de valoració",
+              "content": "30/01/2025"
+            },
+            {
+              "label": "Resultat",
+              "content": "No realitzat, (María Cristina Mulet no indica problemes cognitius)"
+            }
+          ]
+        }
+      },
+      {
+        "type": "Warning",
+        "props": {
+          "marginBottom": 6,
+          "text": "<bold>El resultat facilitat no representa, de cap manera, un diagnòstic mèdic</bold> ni pretén substituir un servei d'atenció mèdica, així com tampoc determinar algun tractament a seguir."
+        }
+      },
+      {
+        "type": "ScalePerYear",
+        "props": {
+          "scales": [
+            {
+              "text": "A:8-10",
+              "subText": "Possible deteriorament"
+            },
+            {
+              "text": "B:5-7",
+              "subText": ""
+            },
+            {
+              "text": "C:3-4",
+              "subText": ""
+            },
+            {
+              "text": "D:0-2",
+              "subText": "Sense possible deteriorament",
+              "selected": true
+            }
+          ],
+          "areaColor": "section-purple",
+          "none": false,
+          "currentYear": "2025"
+        }
+      },
+     
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 7,
+          "marginBottom": 0,
+          "text": "A. <underline>Puntuació de 8-10</underline>: possible deteriorament cognitiu sever."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 7,
+          "marginBottom": 0,
+          "text": "B. <underline>Puntuació de 5-7</underline>: possible deteriorament cognitiu moderat."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 7,
+          "marginBottom": 0,
+          "text": "C. <underline>Puntuació de 3-4</underline>: possible deteriorament cognitiu lleu."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginLeft": 7,
+          "text": "D. <underline>Puntuació de 0-2</underline>: absència de possible deteriorament cognitiu."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "En relació amb el resultat, <bold>María Cristina Mulet, indiques tenir una conservació òptima de les teves capacitats cognitives. Continua així!</bold>"
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "B. OBJECTIUS"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "<bold>L'objectiu principal és mantenir o millorar les teves habilitats cognitives, enfortint les connexions neuronals i augmentant la reserva cognitiva</bold>, amb la finalitat de reduir el risc d'aparició de deteriorament cognitiu."
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "L'estimulació cognitiva regular pot ser beneficiosa per a mantenir un rendiment cognitiu òptim i prevenir el deteriorament cognitiu associat amb l'envelliment."
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "C. PAUTES CLAU"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "text": "En base a la valoració realitzada, els teus gustos i preferències, et recomanem les següents activitats:"
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "title": "Benestar Emocional",
+          "color": "section-purple",
+          "colorLight": "sectionLight-purple",
+          "icon": "images/colored-table/heart-white.png",
+          "marginBottom": 6
+        }
+      },
+      { 
+        "type": "TipList",
+        "props": {
+          "title": "Connexions socials.",
+          "color": "section-purple",
+          "content": "<bold>Mantenir relacions socials</bold> i establir connexions amb altres persones és fonamental per al benestar emocional.",
+          "marginBottom": 6
+        }
+      },
+      { 
+        "type": "TipList",
+        "props": {
+          "title": "Hàbits saludables.",
+          "color": "section-purple",
+          "content": "<bold>Fer exercici físic de manera regular, portar una dieta equilibrada i saludable, evitar el consum d'alcohol i tabac</bold>, serien exemples d'hàbits saludables que poden millorar la salut emocional."
+        }
+      },
+      { 
+        "type": "TipList",
+        "props": {
+          "title": "Connexions socials.",
+          "color": "section-purple",
+          "content": "<bold>Mantenir relacions socials</bold> i establir connexions amb altres persones és fonamental per al benestar emocional.",
+          "marginBottom": 6
+        }
+      },
+      { 
+        "type": "TipList",
+        "props": {
+          "title": "Hàbits saludables.",
+          "color": "section-purple",
+          "content": "<bold>Fer exercici físic de manera regular, portar una dieta equilibrada i saludable, evitar el consum d'alcohol i tabac</bold>, serien exemples d'hàbits saludables que poden millorar la salut emocional."
+        }
+      },
+      {
+        "type": "ColoredTable",
+        "props": {
+          "color": "section-purple",
+          "colorLight": "sectionLight-purple",
+          "content": [
+            { 
+              "type": "Text",
+              "props": {
+                "text": "<bold>Exemples d'activitats</bold>",
+                "marginBottom": 4
+              }
+            },
+            {
+              "type": "List",
+              "props": {
+                "items": [
+                  "Qualsevol tipus d'educació i aprenentatge, com aprendre un idioma o ballar.",
+                  "Desenvolupar activitats creatives, com ara la dansa, la pintura, el dibuix, tocar un instrument musical o cantar.",
+                  "Fer trencaclosques, mots encreuats o jugar a jocs de taula.",
+                  "Participar en activitats socials, com ara reunions o esdeveniments en centres socials.",
+                  "Col·laborar amb organitzacions, associacions o programes de voluntariat.",
+                  "Assistir a museus, concerts, obres de teatre i altres esdeveniments culturals.",
+                  "Jugar a l'ordinador o tauleta activitats que estimulin el cervell."
+                ],
+                "marginBottom": 4,
+                "marginRight": 4
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "D. ENLLAÇOS D'AMPLIACIÓ I FITXES DE TREBALL"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginBottom": 10,
+          "text": "María Cristina Mulet, perquè puguis començar a treballar en l'objectiu proposat, hem seleccionat el material exclusivament per a tu, basat en els teus gustos, preferències i necessitats. Aquest material inclou fitxes de treball, que t'ajudaran a assolir la meta desitjada, i articles d'interès, perquè puguis aprofundir en temes relacionats amb l'activitat física."
+        }
+      },
+      {
+        "type": "GridWorkSheets",
+        "props": {
+          "title": "Fitxes de treball",
+          "color": "purple",
+          "items": [
+            {
+              "text": "1. Exercicis per a l'estimulació física: Iniciació a l'enfortiment muscular",
+              "description": "Exercita la teva musculatura amb exercicis moderats",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            },
+            {
+              "text": "2. Exercicis per a l'estimulació física: Enfortiment Muscular i coordinació",
+              "description": "Exercicis de força per a potenciar la teva musculatura",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Obrir fitxa"
+            }
+          ]
+        }
+      },
+      {
+        "type": "LinkList",
+        "props": {
+          "title": "Enllaços d'ampliació",
+          "color": "purple",
+          "list": [
+            {
+              "text": "Exercicis per a l'estimulació física: L'activitat fisica com a rutina. Aprèn a crear hàbits saludables",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            },
+            {
+              "text": "Gimnàstica per a adults majors",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            },
+            {
+              "text": "Últimes dades de l'impacte de l'activitat física en la prevenció i tractament de les demències",
+              "linkSrc": "https://www.google.com",
+              "linkText": "Accedeix"
+            }
+          ]
+        }
+      },
+      {
+        "type": "PageBreak"
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "E. TINGUES EN COMPTE...",
+          "marginTop": 4
+        }
+      },
+      {
+        "type": "List",
+        "props": {
+          "itemsSeparation": 3,
+          "marginLeft": "[-12px]",
+          "items": [
+            "<bold>Quan no puguis complir les recomanacions descrites</bold>, o presentis una afecció crònica, <bold>hauràs de procurar realitzar activitats físiques d'acord amb les teves possibilitats.</bold>", 
+            "Es recomana <bold>començar amb petites dosis d'activitat física, per anar augmentant gradualment</bold> la durada, freqüència i intensitat", 
+            "És <bold>important que comuniquis al teu professional de referència qualsevol factor de risc, símptoma o malaltia</bold> no informada prèviament, per adaptar la recomanació d'activitat física realitzada.",
+            "Fes sempre exercicis d'escalfament i estiraments per reduir el risc de lesions.",
+            "Si durant l'exercici físic apareix algun símptoma com dolor articular, muscular, disnea intensa, mareig, cefalea, dolor toràcic, rampes musculars o un altre símptoma que et preocupi, has de reduir el ritme o parar i consultar amb el teu professional de salut de referència."
+          ]
+        }
+      },
+      {
+        "type": "Title",
+        "props": {
+          "text": "F. PER QUÈ HAURIA DE SEGUIR AQUESTES RECOMANACIONS?"
+        }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "marginBottom": 16,
+          "text": "Segons l'Organització Mundial de la Salut (OMS), l'alimentació té una influència transcendental en el funcionament adequat del cervell i en la reducció de factors modificables relacionats amb malalties neurodegeneratives. A més, l'alimentació també pot influir en el nostre estat emocional i en el benestar general."
+        }
+      },
+      {
+        "type": "ImageBanner",
+        "props": {
+          "src": "images/oms.png",
+          "title": "Recomanació de l'Organització Mundial de la Salut",
+          "text": "L'OMS recomana fermament fer activitat física per mantenir una funció cognitiva normal i reduir el risc de deteriorament cognitiu."
         }
       }
     ]

@@ -1,12 +1,12 @@
 import { Text, View } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { renderText } from '../../utils/renders'
-import { pagePadding } from '../../config/global'
+import { defaultFontSize, defaultLineHeight, pagePadding } from '../../config/global'
 
 interface BannerProps {
   text: string
-  fontSize?: string
-  lineHeight?: string
+  fontSize?: number | string
+  lineHeight?: number | string
   color?: string
   marginBottom?: number | string
   marginTop?: number | string
@@ -14,11 +14,11 @@ interface BannerProps {
 
 const Banner = ({ 
   text,
-  fontSize = '12px',
-  lineHeight = '1',
+  fontSize = defaultFontSize,
+  lineHeight = defaultLineHeight,
   color = 'primary-DEFAULT',
   marginBottom = 5,
-  marginTop = 0,
+  marginTop = 3,
 }: BannerProps) => {
   return (
     <View wrap={false} style={tw(`mb-${marginBottom} mt-${marginTop} flex flex-col justify-center items-center text-center px-12 bg-${color} min-h-[60px] ml-[-${pagePadding.left}] mr-[-${pagePadding.right}]`)}>
