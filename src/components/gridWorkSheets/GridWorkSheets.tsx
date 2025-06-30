@@ -32,7 +32,7 @@ const GridWorkSheets = ({
   const buttonColor = `bg-section-${color}`
 
   return (
-    <View style={tw(`mb-${marginBottom} mt-${marginTop} ml-${marginLeft} mr-${marginRight}`)}>
+    <View wrap={false} style={tw(`mb-${marginBottom} mt-${marginTop} ml-${marginLeft} mr-${marginRight}`)}>
       <View style={tw('')}>
         {title && (
           <Text style={tw(`text-[13px] tracking-widest font-bold pt-4 pb-5`)}>
@@ -40,13 +40,10 @@ const GridWorkSheets = ({
           </Text>
         )}
       </View>
-      <View style={tw('flex flex-row w-full flex-wrap justify-between')}>
+      <View wrap={false} style={tw('flex flex-row w-full flex-wrap justify-between')}>
         {items.map((item, index) => {
           return (
-            <View
-              key={`${index}_worksheet`}
-              style={tw(`w-[47%] ${backgroundColor} border-b-4 p-3 ${borderColor} mb-6`)}
-            >
+            <View key={`${index}_worksheet`} style={tw(`w-[47%] ${backgroundColor} border-b-4 p-3 ${borderColor} mb-6`)}>
               <Text style={tw('text-[13px] leading-6 font-bold mt-3')}>
                 {renderText(item.text)}
               </Text>

@@ -1,38 +1,56 @@
 {
   "sections": {
-    "portada": [
+    "cover": [
       {
         "type": "Cover",
         "props": {
-          "title": "PLAN DE PREVENCIÓN Y\nREDUCCIÓN DE RIESGOS",
-          "subtitle": "PERSONALIZADO (2025)",
+          "title": "CATALÓGO DE COMPONENTES",
+          "subtitle": "AXIS PDF",
           "image": "images/cover/cover.png",
-          "roundedTag": "Seguimiento proactivo",
-          "bottomLeftText1": "MYBOX VIDACARE",
-          "bottomLeftText2": "María Cristina Mulet",
-          "bottomRightText1": "19 de mayo de 2025"
+          "bottomRightText1": "27 de junio de 2025"
         }
       },
       {
         "type": "FooterCover",
         "props": {
-          "name": "Marta Gimenez",
-          "role": "Orientador/a Personal y Tecnic@ de encendido de impresoras"
+          "name": "Juan Carlos De Román",
+          "role": "Frontend Developer at VCX Team"
         }
       }
     ],
-    "contenido": [
+    "grid-index": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "Contenidos",
-          "smallText": "PLAN DE PREVENCIÓN Y REDUCCIÓN DE RIESGOS PERSONALIZADO",
-          "personName": "María Cristina Mulet",
-          "date": "mayo de 2025"
+          "title": "Componente: GridIndex",
+          "smallText": "CATALÓGO DE COMPONENTES",
+          "personName": "Juan Carlos De Román",
+          "date": "27 de junio de 2025"
         }
       },
       {
         "type": "FooterLogo"
+      },
+      {
+        "type": "GridIndex",
+        "props": {
+          "color": "section-purple",
+          "titleFontSize": "18px",
+          "fontSize": "14px",
+          "oneColumn": true,
+          "withLetters": true,
+          "items": [
+            {
+              "title": "Introducción",
+              "text": "La prevención continua de factores de riesgo modificables es crucial para reducir el riesgo de aparición y desarrollo de enfermedades neurodegenerativas. La evolución hacia hábitos saludables fortalece esta defensa a lo largo del tiempo."
+            },
+            {
+              "title": "Claves para tu bienestar",
+              "text": "Se presenta un resumen de la valoración realizada y de las recomendaciones a seguir para proporcionar una fotografía clara del punto de partida y de las principales acciones a llevar a cabo."
+            }
+          ],
+          "marginBottom": 12
+        }
       },
       {
         "type": "GridIndex",
@@ -53,27 +71,19 @@
             {
               "title": "Próximos pasos",
               "text": "Se establecen objetivos en cada área de recomendación para fomentar un envejecimiento saludable y prevenir el deterioro cognitivo y funcional. Se proporcionan pautas clave basadas en tu situación actual y con propuestas prácticas para alcanzar la meta deseada."
-            },
-            {
-              "title": "Autoría",
-              "text": "Se establecen objetivos en cada área de recomendación para fomentar un envejecimiento saludable y prevenir el deterioro cognitivo y funcional. Se proporcionan pautas clave basadas en tu situación actual y con propuestas prácticas para alcanzar la meta deseada."
-            },
-            {
-              "title": "Bibliografía",
-              "text": "Las recomendaciones emitidas en el siguiente documento han sido elaboradas en base a las directrices de la Organización Mundial de la Salud (OMS) y en consonancia con fuentes bibliográficas de máximo rigor y evidencia científica."
             }
           ]
         }
       }
     ],
-    "introduccion": [
+    "title": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "1. Introducción",
-          "smallText": "PLAN DE PREVENCIÓN Y REDUCCIÓN DE RIESGOS PERSONALIZADO",
-          "personName": "María Cristina Mulet",
-          "date": "mayo de 2025"
+          "title": "Componente: Title",
+          "smallText": "CATALÓGO DE COMPONENTES",
+          "personName": "Juan Carlos De Román",
+          "date": "27 de junio de 2025"
         }
       },
       {
@@ -88,59 +98,40 @@
         }
       },
       {
-        "type": "Text",
+        "type": "Title",
         "props": {
-          "text": "<p><bold>En primer lugar, queremos felicitarte por tu firme compromiso con el cuidado de tu salud</bold>. La prevención continua de factores de riesgo modificables y la evolución hacia hábitos saludables son componentes esenciales para una vida plena.</p><p>La evidencia científica respalda la idea de que la prevención no es simplemente un acto aislado, sino un pacto continuo a lo largo de la vida. Los beneficios acumulativos de la adopción y mantenimiento de hábitos saludables a lo largo del tiempo contribuyen no solo a reducir los riesgos de enfermedades neurodegenerativas, sino también a mejorar tu bienestar general. ¡Estás en el camino correcto!</p><p><bold>En segundo lugar, nos gustaría seguir siendo tus aliados y ayudarte en los siguientes pasos</bold>. Nuestro compromiso es ir más allá, ofreciéndote apoyo personalizado para fortalecer esos hábitos y abordar de manera integral los factores de riesgo modificables. ¿Avanzamos?</p>"
+          "color": "section-turquoise",
+          "text": "PREVENCIÓN CONTINUA PARA UNA VIDA PLENA",
+          "fontSize": "20px",
+          "marginTop": 6
         }
       },
       {
         "type": "Title",
         "props": {
-          "color": "primary-DEFAULT",
-          "text": "14 razones para seguir cuidando tu salud"
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "fontSize": "10px",
+          "marginTop": 6
         }
       },
       {
-        "type": "Text",
+        "type": "Title",
         "props": {
-          "text": "<p>La última actualización de la Comisión Lancet sobre prevención, intervención y atención (2024) afirma que alrededor del 45 % de los casos de demencia podrían prevenirse reduciendo 14 factores de riesgo potencialmente modificables (pérdida de visión no tratada, colesterol alto, obesidad, etcétera).</p><p>El potencial de prevención es alto y, en general, <bold>casi la mitad de las demencias podrían prevenirse eliminando estos 14 factores de riesgo.</bold></p><p>Los científicos inciden en la importancia de la prevención a lo largo de la vida para reducir los factores de riesgo modificables de forma temprana y mantenerlos bajos el mayor tiempo posible</p><p><bold>A continuación, te presentamos los 14 factores de riesgo modificables y el porcentaje en el que cada uno reduce la probabilidad de desarrollar demencia al ser eliminado:</bold></p>"
-        }
-      },
-      {
-        "type": "PageBreak"
-      },
-      {
-        "type": "Image",
-        "props": {
-          "src": "images/image/introduction-infography-es.png",
-          "width": "440px",
-          "marginBottom": 10
-        }
-      },
-      {
-        "type": "Text",
-        "props": {
-          "fontSize": "11px",
-          "lineHeight": "1.2",
-          "marginBottom": 14,
-          "text": "Fuente: Livingston G, Huntley J, Liu KY, et al. Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission. The Lancet 2024; published online July 31. Adaptado por Qida, 2024."
-        }
-      },
-      {
-        "type": "Banner",
-        "props": {
-          "text": "Nunca es demasiado temprano ni demasiado tarde para cuidar de tu salud"
+          "color": "section-purple",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "fontSize": "30px",
+          "marginTop": 6
         }
       }
     ],
-    "claves-para-tu-bienestar": [
+    "text": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "2. Claves para tu bienestar ",
-          "smallText": "PLAN DE PREVENCIÓN Y REDUCCIÓN DE RIESGOS PERSONALIZADO",
-          "personName": "María Cristina Mulet",
-          "date": "mayo de 2025"
+          "title": "Componente: Text",
+          "smallText": "CATALÓGO DE COMPONENTES",
+          "personName": "Juan Carlos De Román",
+          "date": "27 de junio de 2025"
         }
       },
       {
@@ -149,8 +140,119 @@
       {
         "type": "Text",
         "props": {
-          "text": "<p>La siguiente sección proporciona un <bold>resumen de tu estado actual, con el propósito de identificarlas principales áreas de trabajo</bold>. Se trata de una síntesis del bloque de Recomendaciones, donde podrás ampliar información tras esta primera visión general.</p><p><bold>Las recomendaciones están divididas en 3 niveles de actuación:</bold></p>"
+          "text": "<p><bold>En primer lugar, queremos felicitarte por tu firme compromiso con el cuidado de tu salud</bold>. La prevención continua de factores de riesgo modificables y la evolución hacia hábitos saludables son componentes esenciales para una vida plena.</p><p>La evidencia científica respalda la idea de que la prevención no es simplemente un acto aislado, sino un pacto continuo a lo largo de la vida. Los beneficios acumulativos de la adopción y mantenimiento de hábitos saludables a lo largo del tiempo contribuyen no solo a reducir los riesgos de enfermedades neurodegenerativas, sino también a mejorar tu bienestar general. ¡Estás en el camino correcto!</p><p><bold>En segundo lugar, nos gustaría seguir siendo tus aliados y ayudarte en los siguientes pasos</bold>. Nuestro compromiso es ir más allá, ofreciéndote apoyo personalizado para fortalecer esos hábitos y abordar de manera integral los factores de riesgo modificables. ¿Avanzamos?</p>"
         }
+      },
+      {
+        "type": "Text",
+        "props": {
+          "color": "section-yellow",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+          "fontSize": "20px",
+          "marginTop": 12
+        }
+      }
+    ],
+    "image": [
+      {
+        "type": "HeaderPage",
+        "props": {
+          "title": "Componente: Image",
+          "smallText": "CATALÓGO DE COMPONENTES",
+          "personName": "Juan Carlos De Román",
+          "date": "27 de junio de 2025"
+        }
+      },
+      {
+        "type": "FooterLogo"
+      },
+      {
+        "type": "Image",
+        "props": {
+          "src": "images/image/introduction-infography-es.png",
+          "width": "50px",
+          "marginBottom": 10
+        }
+      },
+      {
+        "type": "Image",
+        "props": {
+          "src": "images/image/introduction-infography-es.png",
+          "width": "300px",
+          "marginBottom": 10
+        }
+      },
+      {
+        "type": "Image",
+        "props": {
+          "src": "images/image/introduction-infography-es.png",
+          "width": "100px",
+          "marginBottom": 10,
+          "marginLeft": "auto",
+          "marginRight": "auto"
+        }
+      }
+    ],
+    "banner": [
+      {
+        "type": "HeaderPage",
+        "props": {
+          "title": "Componente: Banner",
+          "smallText": "CATALÓGO DE COMPONENTES",
+          "personName": "Juan Carlos De Román",
+          "date": "27 de junio de 2025"
+        }
+      },
+      {
+        "type": "FooterLogo"
+      },
+      {
+        "type": "Banner",
+        "props": {
+          "text": "Nunca es demasiado temprano ni demasiado tarde para cuidar de tu salud"
+        }
+      },
+      {
+        "type": "Banner",
+        "props": {
+          "color": "section-blue",
+          "fontSize": "16px",
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+        }
+      },
+      {
+        "type": "Banner",
+        "props": {
+          "color": "section-yellow",
+          "fontSize": "10px",
+          "lineHeight": "1",
+          "marginLeft": 12,
+          "marginRight": 12,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+        }
+      },
+      {
+        "type": "Banner",
+        "props": {
+          "color": "section-turquoise",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+        }
+      }
+    ],
+    "list": [
+      {
+        "type": "HeaderPage",
+        "props": {
+          "title": "Componente: List",
+          "smallText": "CATALÓGO DE COMPONENTES",
+          "personName": "Juan Carlos De Román",
+          "date": "27 de junio de 2025"
+        }
+      },
+      {
+        "type": "FooterLogo"
       },
       {
         "type": "List",
@@ -162,21 +264,16 @@
             "<bold>Áreas que requieren atención</bold>: áreas prioritarias a trabajar para intentar adoptar un estilo de vida más saludable y mejorar tu calidad de vida. ¡Estamos aquí para ayudarte!"
           ]
         }
-      },
-      {
-        "type": "Text",
-        "props": {
-          "text": "Recuerda que puedes consultar la evolución de tu estado en comparación con el año pasado a través de tu Portal del Cliente.",
-          "marginBottom": 10
-        }
-      },
+      }
+    ],
+    "section-summary": [
       {
         "type": "SectionSummary",
         "props": {
           "number": 1,
           "color": "section-yellow",
           "title": "Actividad física",
-          "content": "El análisis de la actividad física muestra un patrón de sedentarismo que requiere atención inmediata. Se observa una disminución significativa en la actividad diaria, con menos de 30 minutos de ejercicio moderado por semana. La resistencia cardiovascular está por debajo de los niveles recomendados para la edad, y la fuerza muscular muestra un deterioro progresivo. Es fundamental implementar un programa de ejercicio gradual que incluya caminatas diarias, ejercicios de fuerza básicos y actividades de flexibilidad. Se recomienda comenzar con sesiones cortas de 10-15 minutos e ir incrementando gradualmente la intensidad y duración.",
+          "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
           "tags": [
             {
               "text": "Atención",
@@ -186,7 +283,8 @@
             {
               "text": "Mejora",
               "color": "tag-orange"
-            },           
+            },
+            
             {
               "text": "Sigue así",
               "color": "tag-green"
@@ -202,23 +300,19 @@
           "number": 2,
           "color": "section-green",
           "title": "Nutricional",
-          "content": "El estado nutricional presenta áreas de mejora significativas. Se detecta un consumo excesivo de alimentos procesados y azúcares refinados, mientras que la ingesta de frutas, verduras y proteínas de calidad es insuficiente. Los patrones de hidratación son irregulares, con un consumo de agua por debajo de lo recomendado. La distribución de las comidas a lo largo del día no es óptima, con largos períodos de ayuno seguidos de comidas copiosas. Se sugiere implementar un plan de alimentación estructurado que priorice alimentos naturales, mantenga horarios regulares y asegure una hidratación adecuada.",
+          "content": "En un lugar de la Mancha de cuyo nombre no quiero acordarme...",
           "tags": [
             {
-              "text": "Atención",
-              "color": "tag-red"
+              "text": "Opción 1",
+              "color": "section-yellow"
             },
             {
-              "text": "Mejora",
-              "color": "tag-orange",
+              "text": "Opción 2",
+              "color": "section-blue",
               "selected": true
-            },           
-            {
-              "text": "Sigue así",
-              "color": "tag-green"
             }
           ],
-          "linkText": "Ver fichas de trabajo recomendadas",
+          "linkText": "Ver más",
           "linkUrl": "https://www.qida.es/"
         }
       },
@@ -227,131 +321,44 @@
         "props": {
           "number": 3,
           "color": "section-turquoise",
-          "title": "Cognitivo",
-          "content": "El funcionamiento cognitivo se mantiene en niveles óptimos, mostrando buena capacidad de atención y memoria. Las habilidades de resolución de problemas y toma de decisiones son adecuadas, con un tiempo de respuesta apropiado. La capacidad de concentración se mantiene estable durante períodos prolongados, y la memoria de trabajo funciona eficientemente. Se observa una buena adaptabilidad a nuevas situaciones y tareas. Para mantener estos niveles, se recomienda continuar con actividades de estimulación cognitiva como lectura, juegos de estrategia y aprendizaje de nuevas habilidades.",
+          "title": "Magia",
+          "content": "Erase una vez un reino llamado Qida...",
           "tags": [
             {
-              "text": "Atención",
-              "color": "tag-red"
+              "text": "Dragón",
+              "color": "section-yellow"
             },
             {
-              "text": "Mejora",
-              "color": "tag-orange"
-            },           
+              "text": "Elfo",
+              "color": "section-blue"
+            },
             {
-              "text": "Sigue así",
-              "color": "tag-green",
+              "text": "Humano",
+              "color": "section-green",
               "selected": true
+            },
+            {
+              "text": "Enano",
+              "color": "section-red"
             }
           ],
-          "linkText": "Ver fichas de trabajo recomendadas",
+          "linkText": "Invocar a los dragones",
           "linkUrl": "https://www.qida.es/"
+        }
+      }
+    ],
+    "warning": [
+      {
+        "type": "HeaderPage",
+        "props": {
+          "title": "Componente: Warning",
+          "smallText": "CATALÓGO DE COMPONENTES",
+          "personName": "Juan Carlos De Román",
+          "date": "27 de junio de 2025"
         }
       },
       {
-        "type": "SectionSummary",
-        "props": {
-          "number": 4,
-          "color": "section-purple",
-          "title": "Bienestar emocional",
-          "content": "El bienestar emocional presenta áreas que requieren atención. Se detectan niveles elevados de estrés y ansiedad, con dificultades en la gestión emocional. Los patrones de sueño son irregulares, afectando el descanso y la recuperación. La capacidad de afrontamiento ante situaciones estresantes muestra signos de deterioro. Es importante implementar técnicas de relajación, establecer rutinas de sueño saludables y desarrollar estrategias de manejo del estrés. Se recomienda la práctica regular de mindfulness y la búsqueda de apoyo social cuando sea necesario.",
-          "tags": [
-            {
-              "text": "Atención",
-              "color": "tag-red"
-            },
-            {
-              "text": "Mejora",
-              "color": "tag-orange",
-              "selected": true
-            },            
-            {
-              "text": "Sigue así",
-              "color": "tag-green"
-            }
-          ],
-          "linkText": "Ver fichas de trabajo recomendadas",
-          "linkUrl": "https://www.qida.es/"
-        }
-      },
-      {
-        "type": "SectionSummary",
-        "props": {
-          "number": 5,
-          "color": "section-red",
-          "title": "Social",
-          "content": "Las interacciones sociales muestran un deterioro significativo que requiere atención inmediata. Se observa un aumento en el aislamiento social y una disminución en la participación en actividades grupales. La comunicación interpersonal presenta dificultades, con tendencia al conflicto en las relaciones cercanas. La red de apoyo social se ha reducido notablemente en los últimos meses. Es crucial trabajar en la reconstrucción de conexiones sociales, mejorar las habilidades de comunicación y fomentar la participación en actividades comunitarias. Se sugiere buscar grupos de interés común y mantener contacto regular con familiares y amigos.",
-          "tags": [
-            {
-              "text": "Atención",
-              "color": "tag-red",
-              "selected": true
-            },
-            {
-              "text": "Mejora",
-              "color": "tag-orange"
-            },            
-            {
-              "text": "Sigue así",
-              "color": "tag-green"
-            }
-          ],
-          "linkText": "Ver fichas de trabajo recomendadas",
-          "linkUrl": "https://www.qida.es/"
-        }
-      },
-      {
-        "type": "SectionSummary",
-        "props": {
-          "number": 6,
-          "color": "section-orange",
-          "title": "Audio y visual",
-          "content": "Las capacidades auditivas y visuales se mantienen en buen estado. La agudeza visual es adecuada para las actividades diarias, con una buena percepción de colores y contrastes. La audición se mantiene dentro de rangos normales, con capacidad para distinguir diferentes tonos y frecuencias. No se detectan problemas significativos en la coordinación ojo-mano ni en la percepción espacial. Para mantener estas capacidades, se recomienda realizar revisiones periódicas, proteger los sentidos de estímulos excesivos y mantener una iluminación adecuada en los espacios de trabajo y ocio.",
-          "tags": [
-            {
-              "text": "Atención",
-              "color": "tag-red"
-            },
-            {
-              "text": "Mejora",
-              "color": "tag-orange"
-            },           
-            {
-              "text": "Sigue así",
-              "color": "tag-green",
-              "selected": true
-            }
-          ],
-          "linkText": "Ver fichas de trabajo recomendadas",
-          "linkUrl": "https://www.qida.es/"
-          
-        }
-      },
-      {
-        "type": "SectionSummary",
-        "props": {
-          "number": 7,
-          "color": "section-blue",
-          "title": "Tabaco y alcohol",
-          "content": "El consumo de tabaco y alcohol se mantiene en niveles controlados. No se detecta consumo de tabaco en los últimos meses, y la ingesta de alcohol se limita a ocasiones sociales específicas, dentro de los límites recomendados. La capacidad de autocontrol en situaciones sociales es adecuada, y no se observan signos de dependencia. Se mantiene una buena conciencia sobre los riesgos asociados y se aplican estrategias efectivas de evitación. Es importante mantener estos hábitos saludables y continuar con el monitoreo regular de estos comportamientos.",
-          "tags": [
-            {
-              "text": "Atención",
-              "color": "tag-red"
-            },
-            {
-              "text": "Mejora",
-              "color": "tag-orange"
-            },   
-            {
-              "text": "Sigue así",
-              "color": "tag-green",
-              "selected": true
-            }
-          ],
-          "linkText": "Ver fichas de trabajo recomendadas",
-          "linkUrl": "https://www.qida.es/"
-        }
+        "type": "FooterLogo"
       },
       {
         "type": "Warning",

@@ -3,7 +3,7 @@ import { Text, View } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { renderText } from '../../utils/renders'
 import RenderComponent from '../../core/RenderComponent'
-import { defaultFontSize, defaultLineHeight } from '../../config/global'
+import { defaultFontSize, defaultLineHeight, letters } from '../../config/global'
 
 interface NumberedListProps {
   items: {
@@ -20,35 +20,6 @@ interface NumberedListProps {
   marginLeft?: number
   marginRight?: number
 }
-
-const letters = [
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-  'G',
-  'H',
-  'I',
-  'J',
-  'K',
-  'L',
-  'M',
-  'N',
-  'O',
-  'P',
-  'Q',
-  'R',
-  'S',
-  'T',
-  'U',
-  'V',
-  'W',
-  'X',
-  'Y',
-  'Z',
-]
 
 const NumberedList = ({ 
   items,

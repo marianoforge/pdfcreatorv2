@@ -1,36 +1,49 @@
 import { View, Text } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
-
-import { styles } from './styles'
+import { letters } from '../../config/global'
 
 interface GridIndexProps {
   items: Array<{
     title?: string
     text?: string
   }>
+  color?: string
+  titleFontSize?: number | string
+  fontSize?: number | string
+  marginBottom?: number | string
+  marginTop?: number | string
+  oneColumn?: boolean
+  withLetters?: boolean
 }
 
 const GridIndex = ({ 
   items,
+  color = 'secondary',
+  titleFontSize = '14px',
+  fontSize = '11px',
+  marginBottom = 5,
+  marginTop = 0,
+  oneColumn = false,
+  withLetters = false
 }: GridIndexProps) => {
   return (
-    <View style={tw('flex flex-row justify-between flex-wrap gap-8 pt-8 w-full')}>
+    <View style={tw(`flex flex-row justify-between flex-wrap gap-8 pt-8 w-full mb-${marginBottom} mt-${marginTop}`)}>
       {items.map((item, index) => {
         return (
-          <View key={index} style={tw('flex flex-col gap-4 w-[45%]')}>
+          <View key={index} style={tw(`flex flex-col gap-4 ${oneColumn ? 'w-full' : 'w-[45%]'}`)}>
             <View style={tw('flex flex-row items-center gap-4')}>
-              <Text style={tw('font-bold text-black text-[14px] w-[10px]')}>
-                {index + 1}
+              <Text style={tw(`font-bold text-black text-[${titleFontSize}] w-[10px]`)}>
+                {withLetters ? letters[index] : index + 1}
               </Text>
-              <View style={tw('w-1 h-8 bg-secondary rounded-full')} />
+              <View style={tw(`w-1 h-8 bg-${color} rounded-full`)} />
               {item.title && (
-                <Text style={tw('font-bold text-black text-[14px]')}>
+                <Text style={tw(`font-bold text-black text-[${titleFontSize}]`)}>
                   {item.title}
                 </Text>
               )}
             </View>
             {item.text && (
-              <Text style={tw(`text-black ml-12 text-[11px]`)}>
+              <Text style={tw(`text-black ml-12 text-[${fontSize}]`)}>
                 {item.text}
               </Text>
             )}

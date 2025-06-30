@@ -30,7 +30,7 @@ const SectionSummary = ({
       <View style={tw('mb-8 text-[12px]')} wrap={false}>
         <View style={tw('py-[2px] flex flex-row justify-between items-center border-t border-b border-lightGrey')}>
           <View style={tw('flex flex-row gap-2 justify-start items-stretch w-1/2')}>
-            <View style={tw(`text-section-${color} font-black text-[20px] mr-1`)}>
+            <View style={tw(`text-${color} font-black text-[20px] mr-1`)}>
               <Text>{String(number).padStart(2, '0')}</Text>
             </View>
             <View style={tw(`flex flex-col justify-center items-center font-bold`)}>
@@ -43,7 +43,7 @@ const SectionSummary = ({
             {tags && tags.length > 0 && (
               <View style={tw('flex flex-row items-center')}>
                 {tags.map((tag, index) => {
-                  const tagColor = tag.selected ? `bg-tag-${tag.color} text-white font-bold border-tag-${tag.color}` : 'text-grey border-lightGrey'
+                  const tagColor = tag.selected ? `bg-${tag.color} text-white font-bold border-${tag.color}` : 'text-grey border-lightGrey'
                   const lastStyles = index === tags.length - 1 ? 'border-r-0' : ''
 
                   return (

@@ -6,10 +6,8 @@ import RenderComponent from '../../core/RenderComponent'
 import { defaultFontSize } from '../../config/global'
 import CheckboxChecked from '../../assets/images/checkbox--checked.png'
 
-
 interface TipListProps {
   title: string
-  list?: string[]
   content?: string | React.ReactNode
   fontSize?: number | string
   color?: string
@@ -21,7 +19,6 @@ interface TipListProps {
 
 const TipList = ({ 
   title,
-  list,
   content,
   fontSize = defaultFontSize,
   color = 'grey',
@@ -45,12 +42,6 @@ const TipList = ({
               )}
             </>
           )}
-          {list && list.map((tip, key) => (
-            <View style={tw('flex flex-row gap-2')} key={key}>
-              <Image src={CheckboxChecked} style={tw('w-4 h-4')} />
-              <Text style={tw('flex-1')}>{renderText(tip)}</Text>
-            </View>
-          ))}
         </View>
       </View>
     </View>
