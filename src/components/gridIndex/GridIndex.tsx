@@ -30,20 +30,20 @@ const GridIndex = ({
     <View style={tw(`flex flex-row justify-between flex-wrap gap-8 pt-8 w-full mb-${marginBottom} mt-${marginTop}`)}>
       {items.map((item, index) => {
         return (
-          <View key={index} style={tw(`flex flex-col gap-4 ${oneColumn ? 'w-full' : 'w-[45%]'}`)}>
+          <View key={index} style={tw(`flex flex-col ${oneColumn ? 'w-full' : 'w-[45%]'}`)}>
             <View style={tw('flex flex-row items-center gap-4')}>
-              <Text style={tw(`font-bold text-black text-[${titleFontSize}] w-[10px]`)}>
+              <Text style={tw(`font-bold text-neutral-900 text-center text-[${titleFontSize}] w-[10px]`)}>
                 {withLetters ? letters[index] : index + 1}
               </Text>
-              <View style={tw(`w-1 h-8 bg-${color} rounded-full`)} />
+              <View style={tw(`w-1 h-12 bg-${color} rounded-full`)} />
               {item.title && (
-                <Text style={tw(`font-bold text-black text-[${titleFontSize}]`)}>
+                <Text style={tw(`font-bold text-neutral-900 text-[${titleFontSize}]`)}>
                   {item.title}
                 </Text>
               )}
             </View>
             {item.text && (
-              <Text style={tw(`text-black ml-12 text-[${fontSize}]`)}>
+              <Text style={tw(`text-neutral-900 ml-12 text-[${fontSize}]`)}>
                 {item.text}
               </Text>
             )}

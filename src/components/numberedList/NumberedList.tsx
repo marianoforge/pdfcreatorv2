@@ -14,6 +14,7 @@ interface NumberedListProps {
   withLetters?: boolean
   column?: boolean
   fontSize?: string
+  titleFontSize?: string
   lineHeight?: string
   marginBottom?: number
   marginTop?: number
@@ -24,9 +25,11 @@ interface NumberedListProps {
 const NumberedList = ({ 
   items,
   color = 'secondary',
+  titleColor = 'primary-DEFAULT',
   withLetters = false,
   column = false,
-  fontSize = defaultFontSize,
+  titleFontSize = '14px',
+  fontSize = '11px',
   lineHeight = defaultLineHeight,
   marginBottom = 5,
   marginTop = 0,
@@ -38,20 +41,22 @@ const NumberedList = ({
   return (
     <View style={tw(`mb-${marginBottom} mt-${marginTop} ml-${marginLeft} mr-${marginRight}`)}>
       {items?.map((item, index) => (
-        <View style={tw(`text-[${fontSize}] leading-[${lineHeight}] mb-4`)} key={`pdf-view-2-${index}`}>
+        <View style={tw(`text-[${fontSize}] leading-[${lineHeight}] mb-6`)} key={`pdf-view-2-${index}`}>
           <View style={tw(`${column ? 'flex flex-col' : ''}`)} break>
-            <View style={tw(`flex flex-row items-center gap-2 h-[26px] mb-2 text-${color}`)}>
-              <Text style={tw('font-semibold w-[10px] text-center')}>
+            <View style={tw(`flex flex-row items-center gap-4 h-[26px] mb-2 text-${color}`)}>
+              <Text style={tw(`font-semibold w-[10px] text-center text-[${titleFontSize}] text-${titleColor}`)}>
                 {withLetters ? letters[index] : index + 1}
               </Text>
-              <View style={tw(`w-[2px] h-full rounded-sm bg-${color}`)}></View>
-              <Text style={tw('font-semibold')}>{renderText(item.title)}</Text>
+              <View style={tw(`w-1 h-12 bg-${color} rounded-full`)}></View>
+              <Text style={tw(`font-semibold text-${titleColor} text-[${titleFontSize}]`)}>{renderText(item.title)}</Text>
             </View>
-            {Array.isArray(item.content) ? (
-              item.content.map((content, key) => (RenderComponent(content, `${index}-${key}`))) 
-            ) : ( 
-              <Text style={tw('pl-[25px]')}>{renderText(item.content)}</Text>
-            )}
+            <View style={tw('pl-12')}>
+              {Array.isArray(item.content) ? (
+                item.content.map((content, key) => (RenderComponent(content, `${index}-${key}`)))
+              ) : ( 
+                <Text>{renderText(item.content)}</Text>
+              )}
+            </View>
           </View>
         </View>
       ))}

@@ -392,7 +392,6 @@
                   "type": "Text",
                   "props": {
                     "marginBottom": 2,
-                    "marginLeft": "[25px]",
                     "text": "Recull la <bold>valoració de l'àrea realitzada amb Laura</bold>, el teu Orientador/a Personal. El resultat de l'escala inclou un indicatiu:"
                   }
                 },
@@ -400,7 +399,7 @@
                   "type": "Text",
                   "props": {
                     "marginBottom": 2,
-                    "marginLeft": 20,
+                    "marginLeft": 10,
                     "text": "<image src='images/image/check-icon.png'> Si el resultat es troba dins dels paràmetres adequats segons l'escala, s'identifica amb una marca de verificació per indicar un resultat positiu."
                   }
                 },
@@ -408,7 +407,7 @@
                   "type": "Text",
                   "props": {
                     "marginBottom": 0,
-                    "marginLeft": 20,
+                    "marginLeft": 10,
                     "text": "<image src='images/image/warning-icon.png'> Si el resultat no està dins dels paràmetres adequats segons l'escala, s'identifica amb un senyal d'advertència per assenyalar un resultat que requereix atenció o millora."
                   }
                 }
@@ -449,17 +448,17 @@
           "tags": [
             {
               "text": "Atención",
-              "color": "red",
-              "selected": true
+              "color": "error-700"
             },
             {
               "text": "Mejora",
-              "color": "orange"
+              "color": "warning-300",
+              "selectedFontColor": "black",
+              "selected": true
             },
-            
             {
               "text": "Sigue así",
-              "color": "green"
+              "color": "success-700"
             }
           ]
         }

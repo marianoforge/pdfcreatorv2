@@ -42,7 +42,7 @@ const LinkList = ({
         {list.map((link, index) => (
           <View key={index}>
             {index === 0 && (
-              <View style={tw('w-auto h-px bg-lightGrey ml-10')}></View>
+              <View style={tw('w-auto h-px bg-neutral-100 ml-10')}></View>
             )}
             <View style={tw('flex flex-row items-center justify-between text-[13px] py-3')}>
               <View style={tw('flex-1 flex flex-row items-center text-black')}>
@@ -55,7 +55,7 @@ const LinkList = ({
                 </Link>
               </View>
             </View>
-            <View style={tw('w-auto h-px bg-lightGrey ml-10')}></View>
+            <View style={tw('w-auto h-px bg-neutral-100 ml-10')}></View>
           </View>
         ))}
       </View>

@@ -21,7 +21,7 @@ const TipList = ({
   title,
   content,
   fontSize = defaultFontSize,
-  color = 'grey',
+  color = 'neutral-500',
   marginBottom = 8,
   marginTop = 0,
   marginLeft = 0,

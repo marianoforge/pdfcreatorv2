@@ -29,9 +29,9 @@ const ScalePerYear = ({
     <View style={tw(`mb-${marginBottom} mt-${marginTop} text-[${fontSize}]`)}>
       <View style={tw(`flex flex-row items-center`)}>
         <View>
-          <View style={tw('w-full h-px bg-lightGrey')}></View>
+          <View style={tw('w-full h-px bg-neutral-100')}></View>
           <Text style={tw('px-2 py-1')}>{currentYear}</Text>
-          <View style={tw('w-full h-px bg-lightGrey')}></View>
+          <View style={tw('w-full h-px bg-neutral-100')}></View>
         </View>
         <View
           style={tw('flex flex-row justify-between items-center h-10 flex-1')}
@@ -39,7 +39,7 @@ const ScalePerYear = ({
           <View style={tw('flex justify-center text-center')}></View>
           {scales.map(({ selected, text }, index) => {
             const background =
-              selected && !none ? `bg-${areaColor}` : 'bg-lightGrey'
+              selected && !none ? `bg-${areaColor}` : 'bg-neutral-100'
 
             const textColor =
               selected && !none ? 'text-white font-semibold' : 'text-gray-400'
