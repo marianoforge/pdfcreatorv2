@@ -1,10 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Text, View, Image } from '@react-pdf/renderer'
+import { Text, View } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { renderText } from '../../utils/renders'
 import RenderComponent from '../../core/RenderComponent'
 import { defaultFontSize } from '../../config/global'
-import CheckboxChecked from '../../assets/images/checkbox--checked.png'
 
 interface TipListProps {
   title: string

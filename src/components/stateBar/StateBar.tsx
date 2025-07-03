@@ -2,7 +2,7 @@ import { Text, View } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { renderText } from '../../utils/renders'
 
-interface ScalePerYearProps {
+interface StateBarProps {
   scales: {
     selected: boolean
     text: string
@@ -16,7 +16,7 @@ interface ScalePerYearProps {
   fontSize?: string
 }
 
-const ScalePerYear = ({ 
+const StateBar = ({ 
   scales,
   areaColor,
   none,
@@ -24,7 +24,7 @@ const ScalePerYear = ({
   marginBottom = 6,
   marginTop = 0,
   fontSize = '12px',
-}: ScalePerYearProps) => {
+}: StateBarProps) => {
   return (
     <View style={tw(`mb-${marginBottom} mt-${marginTop} text-[${fontSize}]`)}>
       <View style={tw(`flex flex-row items-center`)}>
@@ -52,7 +52,7 @@ const ScalePerYear = ({
                   `${background} ${height} ${textColor} flex-1 flex justify-center text-center`,
                 )}
               >
-                <Text>{text}</Text>
+                <Text>{renderText(text)}</Text>
               </View>
             )
           })}
@@ -73,7 +73,7 @@ const ScalePerYear = ({
               style={tw(`flex-1 text-center ${textColor}`)}
               key={`scale-per-year-${index}`}
             >
-              {(!none && subText) || ''}
+              {(!none && renderText(subText)) || ''}
             </Text>
           )
         })}
@@ -82,4 +82,4 @@ const ScalePerYear = ({
   )
 }
 
-export default ScalePerYear
+export default StateBar

@@ -18,11 +18,11 @@
         }
       }
     ],
-    "grid-index": [
+    "index": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "Componente: GridIndex",
+          "title": "Componente: Index",
           "smallText": "CATALÓGO DE COMPONENTES",
           "personName": "Juan Carlos De Román",
           "date": "27 de junio de 2025"
@@ -32,7 +32,7 @@
         "type": "FooterLogo"
       },
       {
-        "type": "GridIndex",
+        "type": "Index",
         "props": {
           "color": "section-purple",
           "titleFontSize": "18px",
@@ -53,7 +53,7 @@
         }
       },
       {
-        "type": "GridIndex",
+        "type": "Index",
         "props": {
           "items": [
             {
@@ -485,11 +485,11 @@
         }
       }
     ],
-    "warning": [
+    "alert": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "Componente: Warning",
+          "title": "Componente: Alert",
           "smallText": "CATALÓGO DE COMPONENTES",
           "personName": "Juan Carlos De Román",
           "date": "27 de junio de 2025"
@@ -499,13 +499,13 @@
         "type": "FooterLogo"
       },
       {
-        "type": "Warning",
+        "type": "Alert",
         "props": {
           "text": "<bold>El resultat facilitat no representa, de cap manera, un diagnòstic mèdic</bold> ni pretén substituir un servei d'atenció mèdica, així com tampoc determinar algun tractament a seguir."
         }
       },
       {
-        "type": "Warning",
+        "type": "Alert",
         "props": {
           "text": "Advertencia simple sin formato especial, solo texto normal para mostrar la variante básica."
         }
@@ -545,11 +545,11 @@
         }
       }
     ],
-    "colored-table": [
+    "content-panel": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "Componentes: ColoredTable",
+          "title": "Componentes: ContentPanel",
           "smallText": "CATALÓGO DE COMPONENTES",
           "personName": "Juan Carlos De Román",
           "date": "27 de junio de 2025"
@@ -559,7 +559,7 @@
         "type": "FooterLogo"
       },
       {
-        "type": "ColoredTable",
+        "type": "ContentPanel",
         "props": {
           "title": "Tabla con color personalizado",
           "content": [
@@ -575,7 +575,7 @@
         }
       },
       {
-        "type": "ColoredTable",
+        "type": "ContentPanel",
         "props": {
           "title": "Tabla sólo con titulo",
           "color": "section-turquoise",
@@ -583,7 +583,7 @@
         }
       },
       {
-        "type": "ColoredTable",
+        "type": "ContentPanel",
         "props": {
           "title": "Tabla sólo con titulo",
           "color": "section-blue",
@@ -592,7 +592,7 @@
         }
       },
       {
-        "type": "ColoredTable",
+        "type": "ContentPanel",
         "props": {
           "title": "Tabla sólo con titulo",
           "color": "section-red",
@@ -601,13 +601,31 @@
         }
       },
       {
-        "type": "ColoredTable",
+        "type": "ContentPanel",
         "props": {
           "content": [
-            {
+            { 
               "type": "Text",
               "props": {
-                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+                "text": "<bold>Exemples d'activitats</bold>",
+                "marginBottom": 4
+              }
+            },
+            {
+              "type": "List",
+              "props": {
+                "items": [
+                  "Qualsevol tipus d'educació i aprenentatge, com aprendre un idioma o ballar.",
+                  "Desenvolupar activitats creatives, com ara la dansa, la pintura, el dibuix, tocar un instrument musical o cantar.",
+                  "Fer trencaclosques, mots encreuats o jugar a jocs de taula.",
+                  "Participar en activitats socials, com ara reunions o esdeveniments en centres socials.",
+                  "Col·laborar amb organitzacions, associacions o programes de voluntariat.",
+                  "Assistir a museus, concerts, obres de teatre i altres esdeveniments culturals.",
+                  "Jugar a l'ordinador o tauleta activitats que estimulin el cervell."
+                ],
+                "marginBottom": 4,
+                "marginRight": 4,
+                "marginLeft": 6
               }
             }
           ],
@@ -616,11 +634,11 @@
         }
       }
     ],
-    "table-list": [
+    "table": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "Componentes: TableList",
+          "title": "Componentes: Table",
           "smallText": "CATALÓGO DE COMPONENTES",
           "personName": "Juan Carlos De Román",
           "date": "27 de junio de 2025"
@@ -630,7 +648,7 @@
         "type": "FooterLogo"
       },
       {
-        "type": "TableList",
+        "type": "Table",
         "props": {
           "headerColor": "section-green",
           "rowColor": "sectionLight-green",
@@ -647,7 +665,7 @@
         }
       },
       {
-        "type": "TableList",
+        "type": "Table",
         "props": {
           "headerColor": "section-purple",
           "rowColor": "sectionLight-purple",
@@ -660,7 +678,7 @@
         }
       },
       {
-        "type": "TableList",
+        "type": "Table",
         "props": {
           "headerColor": "section-yellow",
           "roundedCorners": true,
@@ -683,11 +701,11 @@
         }
       }
     ],
-    "scale-per-year": [
+    "state-bar": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "Componente: ScalePerYear",
+          "title": "Componente: StateBar",
           "smallText": "CATALÓGO DE COMPONENTES",
           "personName": "Juan Carlos De Román",
           "date": "27 de junio de 2025"
@@ -697,7 +715,7 @@
         "type": "FooterLogo"
       },
       {
-        "type": "ScalePerYear",
+        "type": "StateBar",
         "props": {
           "scales": [
             {
@@ -716,15 +734,87 @@
           ],
           "areaColor": "section-yellow",
           "none": false,
+          "currentYear": "2025",
+          "marginBottom": 8
+        }
+      },
+      {
+        "type": "StateBar",
+        "props": {
+          "scales": [
+            {
+              "text": "A:8-10",
+              "subText": "Possible deteriorament"
+            },
+            {
+              "text": "B:5-7",
+              "subText": ""
+            },
+            {
+              "text": "C:3-4",
+              "subText": ""
+            },
+            {
+              "text": "D:0-2",
+              "subText": "Sense possible deteriorament",
+              "selected": true
+            }
+          ],
+          "areaColor": "section-purple",
+          "none": false,
+          "currentYear": "2022",
+          "marginBottom": 8
+        }
+      },
+      {
+        "type": "StateBar",
+        "props": {
+          "scales": [
+            {
+              "text": "< 18.5",
+              "subText": "Pes insuficient"
+            },
+            {
+              "text": "18.5-24.9",
+              "subText": "Pes saludable"
+            },
+            {
+              "text": "25-26.9",
+              "subText": "Sobrepès I"
+            },
+            {
+              "text": "27-29.9",
+              "subText": "Sobrepès II"
+            },
+            {
+              "selected": true,
+              "text": "30-34.9",
+              "subText": "Obesitat tipus I"
+            },
+            {
+              "text": "35-39.9",
+              "subText": "Obesitat tipus II"
+            },
+            {
+              "text": "40-49.9",
+              "subText": "Obesitat tipus III"
+            },
+            {
+              "text": "> 50",
+              "subText": "Obesitat tipus IV"
+            }
+          ],
+          "areaColor": "section-green",
+          "none": false,
           "currentYear": "2025"
         }
       }
     ],
-    "grid-work-sheets": [
+    "cards": [
       {
         "type": "HeaderPage",
         "props": {
-          "title": "Componente: GridWorkSheets",
+          "title": "Componente: Cards",
           "smallText": "CATALÓGO DE COMPONENTES",
           "personName": "Juan Carlos De Román",
           "date": "27 de junio de 2025"
@@ -734,10 +824,11 @@
         "type": "FooterLogo"
       },
       {
-        "type": "GridWorkSheets",
+        "type": "Cards",
         "props": {
           "title": "Fichas de trabajo",
-          "color": "green",
+          "color": "section-green",
+          "colorLight": "sectionLight-green",
           "items": [
             {
               "text": "1. Ejercicios para la estimulación física: Iniciación al fortalecimiento muscular",
@@ -755,10 +846,11 @@
         }
       },
       {
-        "type": "GridWorkSheets",
+        "type": "Cards",
         "props": {
           "title": "Fichas de trabajo con diferentes colores",
-          "color": "blue",
+          "color": "section-blue",
+          "colorLight": "sectionLight-blue",
           "items": [
             {
               "text": "Ficha de trabajo 1",
@@ -793,7 +885,9 @@
         "type": "LinkList",
         "props": {
           "title": "Enlaces de ampliación",
-          "color": "green",
+          "color": "section-green",
+          "iconColor": "green",
+          "marginBottom": 8,
           "list": [
             {
               "text": "Ejercicios para la estimulación física: La actividad física como rutina. Aprende a crear hábitos saludables",
@@ -811,18 +905,19 @@
       {
         "type": "LinkList",
         "props": {
-          "title": "Lista de enlaces con diferentes colores",
-          "color": "purple",
+          "title": "Lista de enlaces con otro color",
+          "color": "section-purple",
+          "iconColor": "purple",
           "list": [
             {
               "text": "Enlace 1 con color púrpura",
               "linkSrc": "https://www.google.com",
-              "linkText": "Acceder"
+              "linkText": "Enlace 1"
             },
             {
               "text": "Enlace 2 con color púrpura",
               "linkSrc": "https://www.google.com",
-              "linkText": "Acceder"
+              "linkText": "Enlace 2"
             }
           ]
         }
@@ -844,7 +939,7 @@
       {
         "type": "ImageBanner",
         "props": {
-          "image": "images/image/introduction-infography-es.png",
+          "src": "images/oms.png",
           "title": "Banner con imagen personalizada",
           "text": "Texto del banner con imagen para mostrar las variantes disponibles."
         }

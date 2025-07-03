@@ -3,7 +3,7 @@ import { Text, View } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { renderText } from '../../utils/renders'
 import RenderComponent from '../../core/RenderComponent'
-import { defaultFontSize, defaultLineHeight, letters } from '../../config/global'
+import { defaultLineHeight, letters } from '../../config/global'
 
 interface NumberedListProps {
   items: {
@@ -11,6 +11,7 @@ interface NumberedListProps {
     content: string | any[]
   }[]
   color?: string
+  titleColor?: string
   withLetters?: boolean
   column?: boolean
   fontSize?: string

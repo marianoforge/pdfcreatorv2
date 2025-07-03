@@ -10,6 +10,7 @@ interface LinkListProps {
     linkText: string
   }[]
   color: string
+  iconColor: string
   icon: "idea" | "request"
   src: string
   marginBottom?: number | string
@@ -21,10 +22,11 @@ interface LinkListProps {
 const LinkList = ({ 
   title,
   list = [],
-  color = 'yellow',
+  color = 'section-yellow',
+  iconColor = 'yellow',
   icon = 'idea',
   src = '',
-  marginBottom = 0,
+  marginBottom = 6,
   marginTop = 0,
   marginLeft = 0,
   marginRight = 0,
@@ -46,11 +48,11 @@ const LinkList = ({
             )}
             <View style={tw('flex flex-row items-center justify-between text-[13px] py-3')}>
               <View style={tw('flex-1 flex flex-row items-center text-black')}>
-                <Image src={src || `images/link-list/${icon}-${color}.png`} style={tw('w-[25px] h-[25px]')} />
+                <Image src={src || `images/link-list/${icon}-${iconColor}.png`} style={tw('w-[25px] h-[25px]')} />
                 <Text style={tw('flex-1 ml-2')}>{renderText(link.text)}</Text>
               </View>
               <View style={tw('ml-5 mr-10')}>
-                <Link src={link.linkSrc} style={tw(`text-section-${color} font-bold no-underline`)}>
+                <Link src={link.linkSrc} style={tw(`text-${color} font-bold no-underline`)}>
                   {renderText(link.linkText)}
                 </Link>
               </View>

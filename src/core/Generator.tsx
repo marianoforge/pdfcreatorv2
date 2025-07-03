@@ -19,7 +19,7 @@ const Generator = ({
     <Document style={tw('font-aeonik')}>
       {Object.entries(data.sections).map(([sectionId, section]) => {
         return (
-          <Section key={sectionId} footerType={getFooterType(section)}>
+          <Section key={sectionId} footerType={getFooterType(section as any[])}>
             {(section as any[]).map((content: any, key: number) => {
               return RenderComponent(content, key)
             })}

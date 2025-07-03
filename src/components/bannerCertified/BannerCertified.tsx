@@ -1,7 +1,7 @@
 import { Text, View, Image } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { renderText } from '../../utils/renders'
-import { defaultFontSize, defaultLineHeight, pagePadding } from '../../config/global'
+import { defaultFontSize, defaultLineHeight } from '../../config/global'
 
 interface BannerCertifiedProps {
   text: string

@@ -5,7 +5,7 @@ import RenderComponent from '../../core/RenderComponent'
 import { defaultFontSize, defaultTitleFontSize } from '../../config/global'
 import { Bulb } from '../../assets/images/bulb'
 
-interface ColoredTableProps {
+interface ContentPanelProps {
   title: string
   content: string | React.ReactNode
   fontSize?: number | string
@@ -19,7 +19,7 @@ interface ColoredTableProps {
   marginRight?: number
 }
 
-const ColoredTable = ({ 
+const ContentPanel = ({ 
   title,
   content = undefined,
   fontSize = defaultFontSize,
@@ -31,7 +31,7 @@ const ColoredTable = ({
   marginTop = 0,
   marginLeft = 0,
   marginRight = 0,
-}: ColoredTableProps) => {
+}: ContentPanelProps) => {
   return (
     <View wrap={false} style={tw(`mb-${marginBottom} mt-${marginTop} ml-${marginLeft} mr-${marginRight}`)}>
       {title && (
@@ -53,4 +53,4 @@ const ColoredTable = ({
   )
 }
 
-export default ColoredTable
+export default ContentPanel

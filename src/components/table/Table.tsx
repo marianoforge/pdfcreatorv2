@@ -4,7 +4,7 @@ import { renderText } from '../../utils/renders'
 import { defaultFontSize } from '../../config/global'
 import { RightArrowSvg } from '../../assets/images/right-arrow'
 
-interface TableListProps {
+interface TableProps {
   tableRows: [
     [string]
   ]
@@ -21,7 +21,7 @@ interface TableListProps {
   cellRightArrowColor?: string
 }
 
-const TableList = ({ 
+const Table = ({ 
   tableRows, 
   tableHeader, 
   roundedCorners = false,
@@ -34,7 +34,7 @@ const TableList = ({
   cellBottomPadding = 0,
   cellHaveRightArrow = false,
   cellRightArrowColor = "#f0f0f0",
-}: TableListProps) => {
+}: TableProps) => {
   return (
     <View style={tw(`gap-2 flex flex-col justify-center mb-${marginBottom} mt-${marginTop} text-[${fontSize}] text-center text-black font-bold`)}>
       <View wrap={false} style={tw('flex flex-row justify-center gap-2')}>
@@ -75,4 +75,4 @@ const TableList = ({
   )
 }
 
-export default TableList
+export default Table

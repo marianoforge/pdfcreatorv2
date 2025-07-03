@@ -3,7 +3,7 @@ import { tw } from '../../utils/tailwind'
 import { RightArrowSvg } from '../../assets/images/right-arrow'
 import { renderText } from '../../utils/renders'
 
-interface GridWorkSheetsProps {
+interface CardsProps {
   title: string
   items: {
     text: string
@@ -12,24 +12,26 @@ interface GridWorkSheetsProps {
     linkText: string
   }[]
   color: string
+  colorLight: string
   marginBottom?: number | string
   marginTop?: number | string
   marginLeft?: number | string
   marginRight?: number | string
 }
 
-const GridWorkSheets = ({ 
+const Cards = ({ 
   title,
   items = [],
-  color = 'yellow',
+  color = 'section-yellow',
+  colorLight = 'yellowLight-yellow',
   marginBottom = 0,
   marginTop = 0,
   marginLeft = 0,
   marginRight = 0,
-}: GridWorkSheetsProps) => {
-  const backgroundColor = `bg-sectionLight-${color}`
-  const borderColor = `border-section-${color}`
-  const buttonColor = `bg-section-${color}`
+}: CardsProps) => {
+  const backgroundColor = `bg-${colorLight}`
+  const borderColor = `border-${color}`
+  const buttonColor = `bg-${color}`
 
   return (
     <View wrap={false} style={tw(`mb-${marginBottom} mt-${marginTop} ml-${marginLeft} mr-${marginRight}`)}>
@@ -73,4 +75,4 @@ const GridWorkSheets = ({
   )
 }
 
-export default GridWorkSheets
+export default Cards

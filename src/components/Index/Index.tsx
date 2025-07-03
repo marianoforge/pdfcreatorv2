@@ -2,7 +2,7 @@ import { View, Text } from '@react-pdf/renderer'
 import { tw } from '../../utils/tailwind'
 import { letters } from '../../config/global'
 
-interface GridIndexProps {
+interface IndexProps {
   items: Array<{
     title?: string
     text?: string
@@ -16,7 +16,7 @@ interface GridIndexProps {
   withLetters?: boolean
 }
 
-const GridIndex = ({ 
+const Index = ({ 
   items,
   color = 'secondary',
   titleFontSize = '14px',
@@ -25,7 +25,7 @@ const GridIndex = ({
   marginTop = 0,
   oneColumn = false,
   withLetters = false
-}: GridIndexProps) => {
+}: IndexProps) => {
   return (
     <View style={tw(`flex flex-row justify-between flex-wrap gap-8 pt-8 w-full mb-${marginBottom} mt-${marginTop}`)}>
       {items.map((item, index) => {
@@ -54,4 +54,4 @@ const GridIndex = ({
   )
 }
 
-export default GridIndex
+export default Index
